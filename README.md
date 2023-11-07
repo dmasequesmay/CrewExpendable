@@ -54,7 +54,7 @@
  > Include a navigation diagram for your screens and the layout of each of those screens as desribed below. For all the layouts/diagrams, you can use any tool such as PowerPoint or a drawing program. (Specification requirement is adapted from [this template](https://redirect.cs.umbc.edu/~mgrass2/cmsc345/Template_UI.doc))
 
 ### Navigation Diagram
-> The user should start at the Title Screen and should enter their character name upon selecting the start game option. After selecting a character class, the story will begin. The user should progress to a screen which displays a description of what is happening in their story playthrough and be given a list of menu options to either: view stats, view inventory, act, or quit. 
+> The user should start at the Title Screen and enter their character details upon selecting the start game option. From there, the story will begin. The user should progress to a screen which displays a description of what is happening in their story playthrough and be given a list of menu options to either: view stats, view inventory, act, or quit. The user will repeatedly use this menu to progress through the story until they lose or win.
 > ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/master/User_Navigation_Diagram-1.jpg?raw=true)
 
 ### Screen Layouts
