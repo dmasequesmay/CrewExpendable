@@ -4,7 +4,7 @@
 # Space Exploration
  > Your author list below should include links to all members GitHub (remove existing author).
  
- > Authors: [Dominique Masequesmay](https://github.com/dmasequesmay) , [William Do](https://github.com/WmDo)
+ > Authors: [Dominique Masequesmay](https://github.com/dmasequesmay) , [William Do](https://github.com/WmDo) , [Ramon Garcia](https://github.com/hyneut)
 
  > You will be forming a group of **FOUR** students and working on an interesting project. The project has 4 phases, each one with specific requirements. A list of proposed project ideas that have been successful in previous quarters is listed in the project specifications document on Canvas. You can select an idea from the list and start thinking about the features you will implement. If you want to propose your own original idea, you will have to contact your instructor to discuss the project and obtain written permission before you submit your project proposal (Phase 1). The project work should be divided almost equally among team members. You can of course help each other, but it needs to be clear who will be responsible for which features. Additionally, you are expected to follow Scrum patterns, specifically the use of a Scrum (Project) board, Sprints, and Scrum meetings.
 
@@ -57,7 +57,36 @@
 > Draw a diagram illustrating how the user can navigate from one screen to another. Here is an [example](https://creately.com/diagram/example/ikfqudv82/user-navigation-diagram-classic?r=v). It can be useful to label each symbol that represents a screen so that you can reference the screens in the next section or the rest of the document if necessary. Give a brief description of what the diagram represents.
 
 ### Screen Layouts
-> Include the layout of each of your screens. The layout should describe the screen’s major components such as menus and prompts for user inputs, expected output, and buttons (if applicable). Explain what is on the layout, and the purpose of each menu item, button, etc. If many screens share the same layout, start by describing the general layout and then list the screens that will be using that layout and the differences between each of them.
+> Main menu: The main menu of the game will include the name of the game and a start/quit option. Pressing quit will exit the program, while the next screen will lead you to the input name screen. The prompts for the user include inputting a number: 1) Start and 2) Quit.
+ 
+Input Name: This screen will prompt the user to input a name for the character. The user then will input a name and will be asked to confirm their input before going to the next screen. The user will input 1) for Yes, and 2) for No. If 1), the screen will continue to the select class screen, while selecting 2) will prompt the user to input a name for the character once again.
+ 
+Select Weapon: This screen will prompt the user to select a weapon. The user will have options for what weapons they can choose from, and inputting a number will select that weapon. After the user has selected a weapon, they will be asked to confirm their selection, 1) for Yes, and 2) for No. If 1), the screen will continue to the next screen, while 2) will prompt the user to select a weapon.
+ 
+Story Screen. This screen will output the story to the terminal. The user will be prompted to press enter at the bottom of the text which will continue to the next screen.
+ 
+Gameplay Menu: The main menu consists of functions you can do which includes view inventory, view statistics, action, and quit. The user will be prompted to input a number 1 – 4 in order to move onto that screen. Inputting 1 leads to the action screen, inputting 2 leads to the view inventory screen, inputting 3 leads to the view statistics screen, and inputting 4 closes the program. The user will be prompted to confirm if they want to quit the game, while inputting the other options will continue directly to those screens.
+ 
+Action: The general layout of the screen will provide actions of what the character can do depending on the situation they are in.
+
+Action/Battle:  While in battle, the character will be prompted to input a number 1-5 on what they should do. 1) will attack the enemy you are in battle with, 2) will block damage from what the enemy is doing, 3) will give the player a chance to evade the incoming enemy attack or have a chance of still getting hit 4) will give the user the ability to use items that heal or give more oxygen or can change weapons 5) will return to the gameplay menu.
+
+Battle/Attack: If the user were to choose the attack option, they will be shown how much damage they have done to the alien, and see what the alien’s action is.
+
+Battle/Block: If the user were to choose the block option: they will be shown how much damage they have taken, and what the alien’s action is.
+
+Battle/Evade: If the user were to choose the evade option: they will be shown if they were successful or not and the alien’s action.
+
+Action/Out of battle: When out of battle, the user is able to move from one room to another. The user will be given prompts on which way to go, and inputting a number will change the room that they are in.
+ 
+View Inventory: This screen will show the items the player has in their inventory as well as how many they have of each. The user will be able to use items to heal or get more oxygen. The user will be prompted to input a number to choose an item and what to do with it. They will also have the option to go back to the gameplay menu.
+
+View Statistics: This screen will show the user their statistics such as health, oxygen level, and stamina. The user will be prompted to press enter in order to exit the screen and return to the gameplay menu.
+
+Game Over: This screen will show a game over screen after the character has died, be it to combat or lack of oxygen. The user will be prompted to enter 1) to restart the game or 2) to exit the game. Restarting will return the player to the main menu, while exit will quit the program.
+ 
+Help: The help menu will be available throughout the game. It will include useful information such as information on character classes, items, storyline, and more. The user will be able to input a number to get information about a certain topic, and can then return to their previous screen whenever.
+
 
 ## Class Diagram
 > The Space Exploration: UML Class Diagram models the RPG's object orientation. It illustrates the main classes, interfaces, and associations between classes.
