@@ -55,6 +55,7 @@
 
 ### Navigation Diagram
 > Draw a diagram illustrating how the user can navigate from one screen to another. Here is an [example](https://creately.com/diagram/example/ikfqudv82/user-navigation-diagram-classic?r=v). It can be useful to label each symbol that represents a screen so that you can reference the screens in the next section or the rest of the document if necessary. Give a brief description of what the diagram represents.
+> ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/master/User_Navigation_Diagram-1.jpg?raw=true)
 
 ### Screen Layouts
 > Main menu: The main menu of the game will include the name of the game and a start/quit option. Pressing quit will exit the program, while the next screen will lead you to the input name screen. The prompts for the user include inputting a number: 1) Start and 2) Quit.
