@@ -1,0 +1,19 @@
+PROLOGUE:&
+The year is 2100. You are <characterName>.
+You were recently employed by RTech, the biggest space corporation in New America. 
+Truthfully speaking, you were surprised you were hired given your complete lack of experience but grateful nonetheless. 
+You are an “asset retrieval assistant” who has been assigned to your very first task. 
+You were informed that a mining crew from the RTech extraction division was recently sent out to a remote planet as part of the new expansion project. 
+Apparently there was an incident, so you, along with a partner have been tasked with securing and retrieving important company assets. 
+As you walk into the transfer station, you observe the company issued shuttle pod that you would be taking. 
+It looks like an old, rusty piece of junk that was made in the 2050’s. 
+You’re not quite sure you trust it to take the two of you to your destination in one piece. 
+Nonetheless, you embark on your journey along with your partner.
+On the way to your destination, you decide to get to know your coworker better. You ask:^
+
+“What’s your name?”&
+“Oh, I’m Cyttos, nice to meet you. What’s your name?” they reply.^
+
+“Is this your first assignment too?”&
+"Yep. I'm honestly pretty nervous," they answer.
+This confuses you. Shouldn't they have assigned you with someone more experienced and able to teach you the ropes?^
