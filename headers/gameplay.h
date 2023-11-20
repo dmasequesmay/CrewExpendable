@@ -1,19 +1,15 @@
 #ifndef _GAMEPLAY_H
 #define _GAMEPLAY_H
 #include <iostream>
+#include "menu.h"
 
 using namespace std;
 
-class gameMenu {
-private:
-int _input;
-
+class gameMenu : public Menu {
 public:
 void print();
-void input();
 void choice();
 void inputSelect();
-int getInput();
 void help();
 void action();
 void stats();

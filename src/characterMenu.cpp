@@ -18,18 +18,6 @@ void characterMenu::printClass() {
     cout << "What will you choose? ";
 }
 
-void characterMenu::input() {
-    cin >> _input;
-
-    if (!cin.good() || _input < 1 || _input > 3) {
-        cout << "Invalid Input!" << endl;
-        cin.clear();
-        cin.ignore();
-        printClass();
-        input();
-    }
-}
-
 void characterMenu::correct() {
     //FIXME: add check for class
     cout << endl << "Your name is " << getName() << " and you chose the Tank class." << endl;
@@ -39,21 +27,17 @@ void characterMenu::correct() {
     cout << "===================================" << endl;
     cout << "What will you choose? ";
     //FIXME: check for valid inputs
-    cin >> _input;
+    cin >> userInput;
     setNext();
 }
 
 void characterMenu::setNext() {
-    if (_input == 1) {
+    if (userInput == 1) {
         next = true;
     }
-    else if (_input == 2) {
+    else if (userInput == 2) {
         next = false;
     }
-}
-
-int characterMenu::getInput() {
-    return _input;
 }
 
 bool characterMenu::getNext() {

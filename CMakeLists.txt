@@ -5,5 +5,5 @@ ADD_EXECUTABLE(game
   src/gameplay.cpp
   src/mainMenu.cpp
   src/characterMenu.cpp
-  
+  src/menu.cpp
 )

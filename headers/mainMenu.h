@@ -1,18 +1,16 @@
 #ifndef _MENU_H
 #define _MENU_H
+#include "../headers/menu.h"
 #include <iostream>
 
 using namespace std;
 
-class mainMenu {
+class mainMenu : public Menu {
 private:
-int _input;
 
 public:
 void print();
-void input();
 void quitInput();
-int getInput();
 void choice();
 };
 #endif

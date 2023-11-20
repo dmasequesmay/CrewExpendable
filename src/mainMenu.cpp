@@ -10,22 +10,10 @@ void mainMenu::print() {
     cout << "What will you do? ";
 }
 
-void mainMenu::input() {
-    cin >> _input;
-
-    if (!cin.good() || _input < 1 || _input > 3) {
-        cout << "Invalid Input!" << endl;
-        cin.clear();
-        cin.ignore();
-        // print();
-        // getInput();
-    }
-}
-
 void mainMenu:: quitInput() {
-     cin >> _input;
+     cin >> userInput;
 
-    if (!cin.good() || _input < 1 || _input > 2) {
+    if (!cin.good() || userInput < 1 || userInput > 2) {
         cout << "Invalid Input!" << endl;
         cin.clear();
         cin.ignore();
@@ -35,7 +23,7 @@ void mainMenu:: quitInput() {
 }
 
 void mainMenu::choice() {
-    if (_input == 2) {
+    if (userInput == 2) {
         cout <<  endl << "===================================" << endl;
         cout << "HELP" << endl;
         cout << "*Write Help Screen*" << endl;
@@ -44,7 +32,7 @@ void mainMenu::choice() {
         string unused;
         cin >> unused; 
     }
-    else if (_input == 3) {
+    else if (userInput == 3) {
         int userInput;
         cout <<  endl << "===================================" << endl;
         cout << "Are you sure you want to quit?" << endl;
@@ -62,9 +50,5 @@ void mainMenu::choice() {
             choice();
         }
     }
-}
-
-int mainMenu::getInput() {
-    return _input;
 }
 

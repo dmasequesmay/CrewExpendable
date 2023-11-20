@@ -2,7 +2,6 @@
 #include "../headers/gameplay.h"
 #include "../headers/characterMenu.h"
 
-
 using namespace std;
 
 void wait() {
@@ -18,14 +17,14 @@ int main() {
 
     while (main.getInput() != 1) {
     main.print();
-    main.input();
+    main.input(3);
     main.choice();
     }
 
     while (!cMenu.getNext()) {
     cMenu.print();
     cMenu.printClass();
-    cMenu.input();
+    cMenu.input(3);
     cMenu.correct();
     }
 
@@ -37,7 +36,7 @@ int main() {
 //while(1) only used for testing purposes
     while (1) {
     game.print();
-    game.input();
+    game.input(5);
     game.inputSelect();
     }
 

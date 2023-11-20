@@ -1,19 +1,5 @@
 #include "../headers/gameplay.h"
 
-void gameMenu::input() {
-    cin >> _input;
-
-    if (!cin.good() || _input < 1 || _input > 5) {
-        cout << "Invalid Input!" << endl;
-        cin.clear();
-        cin.ignore();
-    }
-}
-
-int gameMenu::getInput() {
-    return _input;
-}
-
 void gameMenu::print() {
     cout <<  endl << "===================================" << endl;
     cout << "MENU" << endl;

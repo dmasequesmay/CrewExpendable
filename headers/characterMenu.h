@@ -1,12 +1,12 @@
 #ifndef _CHARACTER_MENU_H_
 #define _CHARACTER_MENU_H_
+#include "../headers/menu.h"
 #include <iostream>
 
 using namespace std;
 
-class characterMenu {
+class characterMenu : public Menu{
 private:
-int _input;
 bool next;
 string name;
 string choice;
@@ -18,7 +18,6 @@ int getInput();
 void print();
 void setNext();
 void printClass();
-void input();
 void correct();
 
 //Made for testing as no Character class made
