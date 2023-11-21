@@ -5,10 +5,12 @@ Node::Node() {
     this->description = "";
     this->leftChild = nullptr;
     this->rightChild = nullptr;
+    this->encounter = false;
 };
-Node::Node(const string& c, const string& d) {
+Node::Node(const string& c, const string& d, bool e) {
     this->choice = c;
     this->description = d;
+    this->encounter = e;
 };
 string Node::getChoice() const {
     return this->choice;
@@ -21,6 +23,12 @@ void Node::setChoice(const string& c) {
 };
 void Node::setDescription(const string& d) {
     this->description = d;
+};
+bool Node::isEncounter() {
+    return this->encounter;
+};
+void Node::setEncounter(bool e) {
+    this->encounter = e;
 };
 Node* Node::getLeftChild() const {
     return this->leftChild;

@@ -1,4 +1,4 @@
-PROLOGUE:&
+PROLOGUE:|
 The year is 2100. You are <characterName>.
 You were recently employed by RTech, the biggest space corporation in New America. 
 Truthfully speaking, you were surprised you were hired given your complete lack of experience but grateful nonetheless. 
@@ -11,9 +11,16 @@ You’re not quite sure you trust it to take the two of you to your destination 
 Nonetheless, you embark on your journey along with your partner.
 On the way to your destination, you decide to get to know your coworker better. You ask:^
 
-“What’s your name?”&
+a) “What’s your name?”|&
 “Oh, I’m Cyttos, nice to meet you. What’s your name?” they reply.^
 
-“Is this your first assignment too?”&
+b) “Is this your first assignment too?”|
+"Yep. I'm honestly pretty nervous," they answer.
+This confuses you. Shouldn't they have assigned you with someone more experienced and able to teach you the ropes?^
+
+c) “What’s your name?”|&
+“Oh, I’m Cyttos, nice to meet you. What’s your name?” they reply.^
+
+d) “Is this your first assignment too?”|
 "Yep. I'm honestly pretty nervous," they answer.
 This confuses you. Shouldn't they have assigned you with someone more experienced and able to teach you the ropes?^

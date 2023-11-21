@@ -14,9 +14,10 @@ class Node {
         string description;
         Node* leftChild;
         Node* rightChild;
+        bool encounter; // True if choice triggers combat
     public:
         Node();
-        Node(const string& c, const string& d);
+        Node(const string& c, const string& d, bool e);
         string getChoice() const;
         string getDescription() const;
         void setChoice(const string& c);
@@ -25,6 +26,8 @@ class Node {
         Node* getRightChild() const;
         void setLeftChild(Node* l);
         void setRightChild(Node* r);
+        bool isEncounter();
+        void setEncounter(bool e);
 };
 
 

@@ -4,15 +4,16 @@
 using std::cout;
 using std::endl;
 
-storyTree::storyTree() : fileName("storyScript.txt") {
+storyTree::storyTree() : fileName("storyScript.txt"), height(0) {
+    // implement breadth first search to build tree
     this->prev = nullptr;
     this->curr = nullptr;
-
     parseSource();
     for (int i = 0; i < this->v.size(); ++i) {
-        cout << "Node " << i + 1 << ":" << endl;
+        cout << "[Node " << i + 1 << "] :" << endl;
         cout << v.at(i)->getChoice() << endl;
         cout << v.at(i)->getDescription() << endl;
+        cout << v.at(i)->isEncounter() << endl;
     }
     this->curr = v.at(0);
 
@@ -27,11 +28,15 @@ void storyTree::parseSource() {
     // Read the story from a file so we don't have to recompile everytime the story is changed
     string newChoice = "";
     string newDescription = "";
+    string checkEncounter = "";
     ifstream inFS;
     inFS.open(fileName);
     while (inFS.is_open() && !inFS.eof()) {
         this->curr = new Node;
-        getline(inFS, newChoice, '&');
+        getline(inFS, newChoice, '|');
+        if(inFS >> checkEncounter && checkEncounter == "&") {
+            curr->setEncounter(true);
+        }
         inFS.ignore(); // discard newlines
         curr->setChoice(newChoice);
         // cout << "CHOICE: " << "\n";

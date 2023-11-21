@@ -16,6 +16,7 @@ class storyTree {
         Node* prev; // Pointer to the parent node (previous player decision)
         vector<Node*> v; 
         const string fileName;
+        int height;
     public:
         storyTree(); // Constructs our storyline by manually setting each node's children
         ~storyTree();
