@@ -68,6 +68,7 @@ The Character base class is used to construct characters in the game. The Player
 
 SOLID principles we applied:
 * Dependency: The parseSource() function parses strings from a text file to build a vector of nodes. Instead of depending on specific string variables, the parseSource() function takes input from any text file. This avoids having the story text be hard-coded into the program and we won’t be forced to recompile our program every time we want to change the story.
+* Open Closed: Menu base class was created for extensions of the menu. Different parts of the menu became extensions of the menu class rather than adding onto the menu class. This follows the open-closed principle as the menu class was written and closed for modification, but open for extension. This also follows the open closed principal as the derived menus become their own objects and are closed for modification.
 
 ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/assets/133715991/8c58eff4-d935-48bb-8031-509455819957)
 
