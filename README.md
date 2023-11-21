@@ -65,27 +65,9 @@
 
  
  > ## Phase III
- > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on Zoom and should be conducted by Wednesday of week 8.
- 
- > BEFORE the meeting you should do the following:
- > * Update your class diagram from Phase II to include any feedback you received from your TA/grader.
- > * Considering the SOLID design principles, reflect back on your class diagram and think about how you can use the SOLID principles to improve your design. You should then update the README.md file by adding the following:
- >   * A new class diagram incorporating your changes after considering the SOLID principles.
- >   * For each update in your class diagram, you must explain in 3-4 sentences:
- >     * What SOLID principle(s) did you apply?
- >     * How did you apply it? i.e. describe the change.
- >     * How did this change help you write better code?
- > * Perform a new sprint plan like you did in Phase II.
- > * You should also make sure that your README file (and Project board) are up-to-date reflecting the current status of your project and the most recent class diagram. Previous versions of the README file should still be visible through your commit history.
->
+
 > SOLID principles we applied:
 >  * Dependency: The parseSource() function parses strings from a text file to build a vector of nodes. Instead of depending on specific string variables, the parseSource() function takes input from any text file. This avoids having the story text be hard-coded into the program and we won’t be forced to recompile our program every time we want to change the story.
- 
-> During the meeting with your reader you will discuss: 
- > * How effective your last sprint was (each member should talk about what they did)
- > * Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
- > * Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
- > * What tasks you are planning for this next sprint.
 
 > ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/assets/133715991/62c672b5-e240-451a-b2dc-d5787ba0415f)
 
