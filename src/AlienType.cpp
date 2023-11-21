@@ -1,4 +1,4 @@
-#include "AlienType.h"
+#include "header/AlienType.h"
 #include <iostream>
 
 using namespace std;

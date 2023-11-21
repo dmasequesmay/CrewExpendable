@@ -1,4 +1,4 @@
-#include "Weapon.h"
+#include "header/Weapon.h"
 
 #include <iostream>
 

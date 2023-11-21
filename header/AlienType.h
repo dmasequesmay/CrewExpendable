@@ -1,7 +1,7 @@
 #ifndef ALIENTYPE_H
 #define ALIENTYPE_H
 
-#include "Alien.h"
+#include "header/Alien.h"
 #include <iostream>
 #include <string>
 
