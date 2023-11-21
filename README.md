@@ -69,7 +69,8 @@ The Character base class is used to construct characters in the game. The Player
 SOLID principles we applied:
 * Dependency: The parseSource() function parses strings from a text file to build a vector of nodes. Instead of depending on specific string variables, the parseSource() function takes input from any text file. This avoids having the story text be hard-coded into the program and we won’t be forced to recompile our program every time we want to change the story.
 
-![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/assets/133715991/62c672b5-e240-451a-b2dc-d5787ba0415f)
+![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/assets/133715991/8c58eff4-d935-48bb-8031-509455819957)
+
 
  
 ## Final deliverable
