@@ -1,11 +1,12 @@
 #include "../headers/storyTree.h"
 #include <iostream>
+#include <cassert>
 
 using std::cout;
 using std::endl;
 
 storyTree::storyTree() : fileName("storyScript.txt"), height(0) {
-    // implement breadth first search to build tree
+    // if only one child (rightchild null), directly go to that node (do not prompt user to make a choice)
     this->prev = nullptr;
     this->curr = nullptr;
     parseSource();
@@ -13,40 +14,41 @@ storyTree::storyTree() : fileName("storyScript.txt"), height(0) {
         cout << "[Node " << i + 1 << "] :" << endl;
         cout << v.at(i)->getChoice() << endl;
         cout << v.at(i)->getDescription() << endl;
-        cout << v.at(i)->isEncounter() << endl;
+        // cout << v.at(i)->isEncounter() << endl;
     }
-    this->curr = v.at(0);
+    curr = v.at(0);
+    v.at(0)->setLeftChild(v.at(1));
+    v.at(0)->setRightChild(v.at(2));
+    v.at(1)->setLeftChild(v.at(3));
+    v.at(2)->setLeftChild(v.at(3));
 
 };
 storyTree::~storyTree() {
-    // TODO: Free nodes
     for (int i = 0; i < this->v.size(); ++i) {
         delete v.at(i);
     }
 };
 void storyTree::parseSource() { 
     // Read the story from a file so we don't have to recompile everytime the story is changed
+    // Takes .txt file and grabs strings from it to build vector of nodes
     string newChoice = "";
     string newDescription = "";
     string checkEncounter = "";
     ifstream inFS;
     inFS.open(fileName);
+    assert(inFS.is_open());
     while (inFS.is_open() && !inFS.eof()) {
         this->curr = new Node;
         getline(inFS, newChoice, '|');
-        if(inFS >> checkEncounter && checkEncounter == "&") {
+        curr->setChoice(newChoice);
+        getline(inFS, checkEncounter);
+        if(checkEncounter == "&") {
             curr->setEncounter(true);
         }
-        inFS.ignore(); // discard newlines
-        curr->setChoice(newChoice);
-        // cout << "CHOICE: " << "\n";
-        // cout << curr->getChoice() << "\n";
         getline(inFS, newDescription, '^');
         inFS.ignore();
         inFS.ignore(); // allows for spacing in the text file
         curr->setDescription(newDescription);
-        // cout << "DESCRIPTION: " << "\n";
-        // cout << curr->getDescription() << "\n";
         this->v.push_back(curr);
     }
     this->curr = this->v.at(0);

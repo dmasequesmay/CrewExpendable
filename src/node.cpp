@@ -15,11 +15,11 @@ Node::Node(const string& c, const string& d, bool e) {
 string Node::getChoice() const {
     return this->choice;
 };
-string Node::getDescription() const {
-    return this->description;
-};
 void Node::setChoice(const string& c) {
     this->choice = c;
+};
+string Node::getDescription() const {
+    return this->description;
 };
 void Node::setDescription(const string& d) {
     this->description = d;
@@ -33,11 +33,11 @@ void Node::setEncounter(bool e) {
 Node* Node::getLeftChild() const {
     return this->leftChild;
 };
-Node* Node::getRightChild() const {
-    return this->rightChild;
-};
 void Node::setLeftChild(Node* l) {
     this->leftChild = l;
+};
+Node* Node::getRightChild() const {
+    return this->rightChild;
 };
 void Node::setRightChild(Node* r) {
     this->rightChild = r;

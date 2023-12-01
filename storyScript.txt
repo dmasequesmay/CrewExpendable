@@ -18,6 +18,9 @@ b) “Is this your first assignment too?”|
 "Yep. I'm honestly pretty nervous," they answer.
 This confuses you. Shouldn't they have assigned you with someone more experienced and able to teach you the ropes?^
 
+You decide to ask another question.|
+^
+
 c) “What’s your name?”|&
 “Oh, I’m Cyttos, nice to meet you. What’s your name?” they reply.^
 
