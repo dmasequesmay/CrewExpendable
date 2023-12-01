@@ -10,12 +10,14 @@ storyTree::storyTree() : fileName("storyScript.txt"), height(0) {
     this->prev = nullptr;
     this->curr = nullptr;
     parseSource();
-    for (int i = 0; i < this->v.size(); ++i) {
-        cout << "[Node " << i + 1 << "] :" << endl;
-        cout << v.at(i)->getChoice() << endl;
-        cout << v.at(i)->getDescription() << endl;
-        // cout << v.at(i)->isEncounter() << endl;
-    }
+    // for (int i = 0; i < this->v.size(); ++i) {
+    //     cout << "[Node " << i + 1 << "] :" << endl;
+    //     cout << v.at(i)->getChoice() << endl;
+    //     cout << v.at(i)->getDescription() << endl;
+    //     if (v.at(i)->isEncounter()) {
+    //         cout << "^ encounter ^" << endl;
+    //     }
+    // }
     curr = v.at(0);
     v.at(0)->setLeftChild(v.at(1));
     v.at(0)->setRightChild(v.at(2));
