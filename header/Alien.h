@@ -2,7 +2,7 @@
 #define ALIEN_H
 
 #include <iostream>
-#include "Character.h"
+#include "../header/Character.h"
 #include <string>
 #include <vector>
 
