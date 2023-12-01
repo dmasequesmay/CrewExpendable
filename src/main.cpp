@@ -1,4 +1,3 @@
-hyneut/menu
 #include "../headers/mainMenu.h"
 #include "../headers/gameplay.h"
 #include "../headers/characterMenu.h"
@@ -29,6 +28,7 @@ int main() {
     //while !something to keep wrapping for invalid input
     cMenu.printClass();
     cMenu.input(3);
+    cMenu.setClass();
     //end here
     cMenu.correct();
     }

@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class characterMenu : public Menu{
+class characterMenu : public Menu {
 private:
 bool next;
 string name;
@@ -19,6 +19,7 @@ void print();
 void setNext();
 void printClass();
 void correct();
+void setClass();
 
 //Made for testing as no Character class made
 string getName();
