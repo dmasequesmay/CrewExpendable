@@ -11,10 +11,6 @@ TankAlien::tankAlien(const string &name, double health, double stamina, double a
     attackDamage = 25;
 }
 
-void TankAlien::attack(Character &c) override {
-        c.damage(attackDamage);
-}
-
 
 SlipperyAlien::slipperyAlien(const string &name, double health, double stamina, double attackDamage)
     :Alien(const string &name, double health, double stamina, double attackDamage, SLIPPERYALIEN)
@@ -24,18 +20,10 @@ SlipperyAlien::slipperyAlien(const string &name, double health, double stamina, 
     attackDamage = 15;
 }
 
-void SlipperyAlien::attack(Character &c) override {
-        c.damage(attackDamage);
-}
-
 BossAlien::bossAlien(const string &name, double health, double stamina, double attackDamage)
     :Alien(const string &name, double health, double stamina, double attackDamage, BOSSALIEN)
 {
-    health = 20;
+    health = 200;
     stamina = 150;
     attackDamage = 30;
-}
-
-void BossAlien::attack(Character &c) override {
-    c.damage(attackDamage);
 }
