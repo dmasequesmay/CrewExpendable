@@ -1,4 +1,4 @@
-#include "header/WeaponType.h"
+#include "../header/WeaponType.h"
 #include <iostream>
 
 HeavyWeapon::heavyWeapon(WeaponType type, double attackDamage, double criticalChance, double durability, double staminaCost)
