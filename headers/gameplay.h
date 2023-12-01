@@ -14,7 +14,7 @@ void help();
 void action(storyTree& t);
 void stats();
 void inv();
-void quit();
+void quit(storyTree& t);
 };
 
 #endif

@@ -24,7 +24,7 @@ void gameMenu::inputSelect(storyTree& t) {
         help();
     }
     else if (userInput == 5) {
-        quit();
+        quit(t);
     }
 }
 
@@ -56,7 +56,7 @@ void gameMenu::help() {
     cout << "===================================" << endl;
 }
 
-void gameMenu::quit() {
+void gameMenu::quit(storyTree& tree) {
         int userInput;
         cout <<  endl << "===================================" << endl;
         cout << "Are you sure you want to quit?" << endl;
@@ -67,12 +67,13 @@ void gameMenu::quit() {
 
         if (userInput == 1) {
             cout << "Thanks for playing!" << endl << endl;
+            tree.~storyTree();
             exit(1);
         }
         else if (userInput > 2 || !cin.good()) {
             cin.clear();
             cin.ignore();
             cout << "Invalid Input!" << endl;
-            quit();
+            quit(tree);
         }
 }
