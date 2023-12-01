@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "PlayerType.h"
+#include "../lib/PlayerType.h"
 
 TankPlayer::TankPlayer(const string &name, double health, double stamina, double attackDamage, double oxygenLevel, vector<string> inventory)
     :Player(name, health, stamina, attackDamage, TANKPLAYER, oxygenLevel, inventory)

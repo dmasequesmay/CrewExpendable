@@ -2,7 +2,7 @@
 #define __COMBAT_H__
 
 #include <string>
-#include "Character.h"
+#include "../lib/Character.h"
 
 using namespace std;
 

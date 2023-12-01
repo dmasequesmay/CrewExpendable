@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "Player.h"
+#include "../lib/Player.h"
 
 Player::Player(const string &name, double health, double stamina, double attackDamage, PlayerType pType, double oxygenLevel, vector<string> inventory)
     :Character(PLAYER, name, health, stamina, attackDamage), pType(pType), oxygenLevel(oxygenLevel), inventory(inventory)
