@@ -8,7 +8,6 @@ using namespace std;
 class gameMenu : public Menu {
 public:
 void print();
-void choice();
 void inputSelect();
 void help();
 void action();

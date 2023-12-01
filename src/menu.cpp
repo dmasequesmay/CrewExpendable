@@ -11,7 +11,15 @@ void Menu::input(int max) {
         }
     }
 
-    if (max == 3) {
+    else if (max == 3) {
+        if (!cin.good() || userInput < 1 || userInput > 2) {
+            cout << "Invalid Input!" << endl;
+            cin.clear();
+            cin.ignore();
+        }
+    }
+
+    else if (max == 5) {
         if (!cin.good() || userInput < 1 || userInput > 2) {
             cout << "Invalid Input!" << endl;
             cin.clear();

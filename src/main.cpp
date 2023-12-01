@@ -23,8 +23,10 @@ int main() {
 
     while (!cMenu.getNext()) {
     cMenu.print();
+    //while !something to keep wrapping for invalid input
     cMenu.printClass();
     cMenu.input(3);
+    //end here
     cMenu.correct();
     }
 

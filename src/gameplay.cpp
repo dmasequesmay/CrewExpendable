@@ -10,19 +10,19 @@ void gameMenu::print() {
 }
 
 void gameMenu::inputSelect() {
-    if (getInput() == 1) {
+    if (userInput == 1) {
         action();
     }
-    else if (getInput() == 2) {
+    else if (userInput == 2) {
         inv();
     }
-    else if (getInput() == 3) {
+    else if (userInput == 3) {
         stats();
     }
-    else if (getInput() == 4) {
+    else if (userInput == 4) {
         help();
     }
-    else if (getInput() == 5) {
+    else if (userInput == 5) {
         quit();
     }
 }
