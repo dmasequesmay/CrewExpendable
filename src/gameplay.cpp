@@ -1,4 +1,5 @@
 #include "../headers/gameplay.h"
+#include "../headers/storyTree.h"
 
 void gameMenu::print() {
     cout <<  endl << "===================================" << endl;
@@ -9,9 +10,9 @@ void gameMenu::print() {
     cout << "What will you do? ";
 }
 
-void gameMenu::inputSelect() {
+void gameMenu::inputSelect(storyTree& t) {
     if (userInput == 1) {
-        action();
+        action(t);
     }
     else if (userInput == 2) {
         inv();
@@ -27,12 +28,11 @@ void gameMenu::inputSelect() {
     }
 }
 
-void gameMenu::action() {
+void gameMenu::action(storyTree& tree) {
     cout <<  endl << "===================================" << endl;
-    cout << "ACTION" << endl;
-    cout << "*IMPLEMENT ACTION SCREEN*" << endl;
+    tree.leftChoice();
+    tree.rightChoice();
     cout << "===================================" << endl;
-
 }
 
 void gameMenu::inv() {

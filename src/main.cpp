@@ -1,4 +1,3 @@
-hyneut/menu
 #include "../headers/mainMenu.h"
 #include "../headers/gameplay.h"
 #include "../headers/characterMenu.h"
@@ -34,7 +33,8 @@ int main() {
     }
 
     cout <<  endl << "===================================" << endl;
-    cout << "*INSERT STORY HERE" << endl << endl;
+    storyTree Tree = storyTree();
+    Tree.currChoice(); // PROLOGUE 
     wait();
     cout << "===================================" << endl;
 
@@ -42,7 +42,7 @@ int main() {
     while (1) {
     game.print();
     game.input(5);
-    game.inputSelect();
+    game.inputSelect(Tree);
     }
 
     return 0;

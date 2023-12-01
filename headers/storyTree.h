@@ -23,9 +23,10 @@ class storyTree {
         void parseSource(); // Takes strings from text file and builds a vector of nodes
         void moveLeft(); // before moving, set prev to curr and then curr to children
         void moveRight();
+        void currChoice() const;
+        void leftChoice() const;
+        void rightChoice() const;
         bool isLeaf(const Node* node) const; 
-
 };
-
 
 #endif

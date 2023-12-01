@@ -10,7 +10,7 @@ void mainMenu::print() {
     cout << "What will you do? ";
 }
 
-void mainMenu:: quitInput() {
+void mainMenu::quitInput() {
      cin >> userInput;
 
     if (!cin.good() || userInput < 1 || userInput > 2) {

@@ -2,15 +2,16 @@
 #define _GAMEPLAY_H
 #include <iostream>
 #include "menu.h"
+#include "storyTree.h"
 
 using namespace std;
 
 class gameMenu : public Menu {
 public:
 void print();
-void inputSelect();
+void inputSelect(storyTree& t);
 void help();
-void action();
+void action(storyTree& t);
 void stats();
 void inv();
 void quit();

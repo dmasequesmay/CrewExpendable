@@ -10,22 +10,23 @@ storyTree::storyTree() : fileName("storyScript.txt"), height(0) {
     this->prev = nullptr;
     this->curr = nullptr;
     parseSource();
-    for (int i = 0; i < this->v.size(); ++i) {
-        cout << "[Node " << i + 1 << "] :" << endl;
-        cout << v.at(i)->getChoice() << endl;
-        cout << v.at(i)->getDescription() << endl;
-        // cout << v.at(i)->isEncounter() << endl;
-    }
+    // for (int i = 0; i < this->v.size(); ++i) {
+    //     cout << "[Node " << i + 1 << "] :" << endl;
+    //     cout << v.at(i)->getChoice() << endl;
+    //     cout << v.at(i)->getDescription() << endl;
+    //     cout << v.at(i)->isEncounter() << endl;
+    // }
     curr = v.at(0);
     v.at(0)->setLeftChild(v.at(1));
     v.at(0)->setRightChild(v.at(2));
     v.at(1)->setLeftChild(v.at(3));
     v.at(2)->setLeftChild(v.at(3));
-
 };
 storyTree::~storyTree() {
     for (int i = 0; i < this->v.size(); ++i) {
+        cout << "DELETING NODE " << i << endl;
         delete v.at(i);
+        v.at(i) == nullptr;
     }
 };
 void storyTree::parseSource() { 
@@ -57,8 +58,27 @@ void storyTree::parseSource() {
 void storyTree::moveLeft() {
     this->prev = curr;
     this->curr = curr->getLeftChild();
+    this->curr->getDescription();
 };
 void storyTree::moveRight() {
     this->prev = curr;
     this->curr = curr->getRightChild();
+    this->curr->getDescription();
+};
+void storyTree::currChoice() const {
+    cout << this->curr->getChoice() << endl;
+};
+void storyTree::leftChoice() const {
+    cout << curr->getLeftChild()->getChoice() << endl;
+};
+void storyTree::rightChoice() const {
+    cout << curr->getRightChild()->getChoice() << endl;
+};
+bool storyTree::isLeaf(const Node* node) const {
+    if (node->getLeftChild() == nullptr && node->getRightChild() == nullptr) {
+        return true;
+    }
+    else {
+        return false;
+    }
 };

@@ -1,5 +1,5 @@
-hyneut/menu
 CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
+project(cs100final)
 
 ADD_EXECUTABLE(game
   src/main.cpp
