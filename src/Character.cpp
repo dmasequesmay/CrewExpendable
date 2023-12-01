@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "../header/Character.h"
+#include "../lib/Character.h"
 
 using namespace std;
 
