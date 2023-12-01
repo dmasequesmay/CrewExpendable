@@ -2,14 +2,14 @@
 
 #include "PlayerType.h"
 
-TankPlayer(const string &name, double health, double stamina, double attackDamage, double oxygenLevel, vector<string> inventory)
-    :Player(const string &name, double health, double stamina, double attackDamage, TANKPLAYER, double oxygenLevel, vector<string> inventory)
+TankPlayer::TankPlayer(const string &name, double health, double stamina, double attackDamage, double oxygenLevel, vector<string> inventory)
+    :Player(name, health, stamina, attackDamage, TANKPLAYER, oxygenLevel, inventory)
 {}
 
-NimblePlayer(const string &name, double health, double stamina, double attackDamage, double oxygenLevel, vector<string> inventory)
-    :Player(const string &name, double health, double stamina, double attackDamage, NIMBLEPLAYER, double oxygenLevel, vector<string> inventory)
+NimblePlayer::NimblePlayer(const string &name, double health, double stamina, double attackDamage, double oxygenLevel, vector<string> inventory)
+    :Player(name, health, stamina, attackDamage, NIMBLEPLAYER, oxygenLevel, inventory)
 {}
 
-AllRounderPlayer(const string &name, double health, double stamina, double attackDamage, double oxygenLevel, vector<string> inventory)
-    :Player(const string &name, double health, double stamina, double attackDamage, ALLROUNDERPLAYER, double oxygenLevel, vector<string> inventory)
+AllRounderPlayer::AllRounderPlayer(const string &name, double health, double stamina, double attackDamage, double oxygenLevel, vector<string> inventory)
+    :Player(name, health, stamina, attackDamage, ALLROUNDERPLAYER, oxygenLevel, inventory)
 {}

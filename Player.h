@@ -23,8 +23,6 @@ class Player : public Character {
  	    int getOxygenLevel() const;
         //Returns the names of each object listed in the inventory array
         void getInventory();
-        virtual void attack(Character &) = 0;
-        virtual void block(Character &) = 0;
 };
 
 #endif
