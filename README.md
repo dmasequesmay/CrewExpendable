@@ -2,11 +2,8 @@
  > Prompt text is any lines beginning with "\>"
  > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
 # Space Exploration
- > Your author list below should include links to all members GitHub (remove existing author).
  
- > Authors: [Dominique Masequesmay](https://github.com/dmasequesmay)
-
- > You will be forming a group of **FOUR** students and working on an interesting project. The project has 4 phases, each one with specific requirements. A list of proposed project ideas that have been successful in previous quarters is listed in the project specifications document on Canvas. You can select an idea from the list and start thinking about the features you will implement. If you want to propose your own original idea, you will have to contact your instructor to discuss the project and obtain written permission before you submit your project proposal (Phase 1). The project work should be divided almost equally among team members. You can of course help each other, but it needs to be clear who will be responsible for which features. Additionally, you are expected to follow Scrum patterns, specifically the use of a Scrum (Project) board, Sprints, and Scrum meetings.
+ > Authors: [Dominique Masequesmay](https://github.com/dmasequesmay) , [William Do](https://github.com/WmDo) , [Ramon Garcia](https://github.com/hyneut) , [Dylan Vuong](https://github.com/dvuong917)
 
  > ## Expectations
  > * The backend of your project should be implemented in C++. If you wish to choose anoher programming language (e.g. Java, Python), please discuss with your lab TA to obtain permission.
@@ -54,13 +51,48 @@
  > Include a navigation diagram for your screens and the layout of each of those screens as desribed below. For all the layouts/diagrams, you can use any tool such as PowerPoint or a drawing program. (Specification requirement is adapted from [this template](https://redirect.cs.umbc.edu/~mgrass2/cmsc345/Template_UI.doc))
 
 ### Navigation Diagram
-> Draw a diagram illustrating how the user can navigate from one screen to another. Here is an [example](https://creately.com/diagram/example/ikfqudv82/user-navigation-diagram-classic?r=v). It can be useful to label each symbol that represents a screen so that you can reference the screens in the next section or the rest of the document if necessary. Give a brief description of what the diagram represents.
+> The user should start at the Title Screen and enter their character details upon selecting the start game option. From there, the story will begin. The user should progress to a screen which displays a description of what is happening in their story playthrough and be given a list of menu options to either: view stats, view inventory, act, or quit. The user will repeatedly use this menu to progress through the story until they lose or win.
+> ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/master/User_Navigation_Diagram-2.jpg))
 
 ### Screen Layouts
-> Include the layout of each of your screens. The layout should describe the screen’s major components such as menus and prompts for user inputs, expected output, and buttons (if applicable). Explain what is on the layout, and the purpose of each menu item, button, etc. If many screens share the same layout, start by describing the general layout and then list the screens that will be using that layout and the differences between each of them.
+> Main menu: The main menu of the game will include the name of the game and a start/quit option. Pressing quit will exit the program, while the next screen will lead you to the input name screen. The prompts for the user include inputting a number: 1) Start and 2) Quit.
+ 
+>Input Name: This screen will prompt the user to input a name for the character. The user then will input a name and will be asked to confirm their input before going to the next screen. The user will input 1) for Yes, and 2) for No. If 1), the screen will continue to the select class screen, while selecting 2) will prompt the user to input a name for the character once again.
+ 
+>Select Weapon: This screen will prompt the user to select a weapon. The user will have options for what weapons they can choose from, and inputting a number will select that weapon. After the user has selected a weapon, they will be asked to confirm their selection, 1) for Yes, and 2) for No. If 1), the screen will continue to the next screen, while 2) will prompt the user to select a weapon.
+ 
+>Story Screen. This screen will output the story to the terminal. The user will be prompted to press enter at the bottom of the text which will continue to the next screen.
+ 
+>Gameplay Menu: The main menu consists of functions you can do which includes view inventory, view statistics, action, and quit. The user will be prompted to input a number 1 – 4 in order to move onto that screen. Inputting 1 leads to the action screen, inputting 2 leads to the view inventory screen, inputting 3 leads to the view statistics screen, and inputting 4 closes the program. The user will be prompted to confirm if they want to quit the game, while inputting the other options will continue directly to those screens.
+ 
+>Action: The general layout of the screen will provide actions of what the character can do depending on the situation they are in.
+
+>Action/Battle:  While in battle, the character will be prompted to input a number 1-5 on what they should do. 1) will attack the enemy you are in battle with, 2) will block damage from what the enemy is doing, 3) will give the player a chance to evade the incoming enemy attack or have a chance of still getting hit 4) will give the user the ability to use items that heal or give more oxygen or can change weapons 5) will return to the gameplay menu.
+
+>Battle/Attack: If the user were to choose the attack option, they will be shown how much damage they have done to the alien, and see what the alien’s action is.
+
+>Battle/Block: If the user were to choose the block option: they will be shown how much damage they have taken, and what the alien’s action is.
+
+>Battle/Evade: If the user were to choose the evade option: they will be shown if they were successful or not and the alien’s action.
+
+>Action/Out of battle: When out of battle, the user is able to move from one room to another. The user will be given prompts on which way to go, and inputting a number will change the room that they are in.
+ 
+>View Inventory: This screen will show the items the player has in their inventory as well as how many they have of each. The user will be able to use items to heal or get more oxygen. The user will be prompted to input a number to choose an item and what to do with it. They will also have the option to go back to the gameplay menu.
+
+>View Statistics: This screen will show the user their statistics such as health, oxygen level, and stamina. The user will be prompted to press enter in order to exit the screen and return to the gameplay menu.
+
+>Game Over: This screen will show a game over screen after the character has died, be it to combat or lack of oxygen. The user will be prompted to enter 1) to restart the game or 2) to exit the game. Restarting will return the player to the main menu, while exit will quit the program.
+ 
+>Help: The help menu will be available throughout the game. It will include useful information such as information on character classes, items, storyline, and more. The user will be able to input a number to get information about a certain topic, and can then return to their previous screen whenever.
+
 
 ## Class Diagram
- > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
+> The Space Exploration: UML Class Diagram models the RPG's object orientation. It illustrates the main classes, interfaces, and associations between classes.
+>
+> The Character base class is used to construct characters in the game. The Player class and Alien class are derived from the Character class to inherit all protected variables and public mutator/accessor functions. The Player class and Alien class are both abstract base classes because they include virtual void function(s). There are three subclasses, tankPlayer, nimblePlayer, and allRounderPlayer, which inherit from the Player class. There are three subclasses, tankAlien, slipperyAlien, and bossAlien, which inherit from the Alien class. The Player and Alien subclasses all must override the virtual function(s) defined from their parent superclass. Additionally, the Player Class has an aggregation relationship with the Weapon class because all players have weapons. The Weapon base class has two derived classes, heavyWeapon and lightWeapon, in which their protected variables will have different starting values.
+>
+> ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/assets/133715991/92989169-94b5-4668-84ce-4dab55f2c7d6)
+
  
  > ## Phase III
  > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on Zoom and should be conducted by Wednesday of week 8.

@@ -1,4 +1,5 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+hyneut/menu
+CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
 
 ADD_EXECUTABLE(game
   src/main.cpp
@@ -6,4 +7,6 @@ ADD_EXECUTABLE(game
   src/mainMenu.cpp
   src/characterMenu.cpp
   src/menu.cpp
+  src/storyTree.cpp
+  src/node.cpp
 )
