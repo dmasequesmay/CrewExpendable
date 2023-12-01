@@ -21,6 +21,6 @@ class Weapon {
         double getCriticalChance();
         double getDurability();
         double getStaminaCost();
-}
+};
 
 #endif

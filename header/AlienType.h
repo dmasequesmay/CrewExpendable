@@ -7,16 +7,18 @@
 
 using namespace std;
 
-class TankAlien : public Player {
+class TankAlien : public Alien {
     public: 
-        tankAlien(const string &name, double health, double stamina, double attackDamage);
-}
+        TankAlien(const string &name, double health, double stamina, double attackDamage);
+};
 
-class SlipperyAlien : public Player {
+class SlipperyAlien : public Alien {
     public: 
-        slipperyAlien(const string &name, double health, double stamina, double attackDamage);
-}
+        SlipperyAlien(const string &name, double health, double stamina, double attackDamage);
+};
 
-class BossAlien : public Player {
+class BossAlien : public Alien {
     public: 
-        bossAlien(const string &name, double health, double stamina, double attackDamage);
+        BossAlien(const string &name, double health, double stamina, double attackDamage);
+};
+#endif

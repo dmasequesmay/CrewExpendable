@@ -6,12 +6,13 @@
 #include <string>
 #include <vector>
 
-enum AlienType {TANKALIEN, SLIPPERYALIEN, BOSSALIEN}
+enum AlienType {TANKALIEN, SLIPPERYALIEN, BOSSALIEN};
 
 class Alien : public Character {
     protected:
         AlienType alienClass;
     public:
-}
+        Alien(const string &name, double health, double stamina, double attackDamage, AlienType alienClass);
+};
 
 #endif
