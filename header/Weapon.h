@@ -15,6 +15,7 @@ class Weapon {
 
     public:
         Weapon(WeaponType type, double attackDamage, double criticalChance, double durability, double staminaCost);
+        
         WeaponType getType() const;
         double getAttackDamage();
         double getCriticalChance();
