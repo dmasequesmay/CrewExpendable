@@ -3,8 +3,7 @@ project(cs100finalproject)
 
 ADD_SUBDIRECTORY(googletest)
 
-ADD_EXECUTABLE(test
-	test/combattest.cpp
+ADD_EXECUTABLE(game
     src/Character.cpp
     src/Combat.cpp
     src/Player.cpp
