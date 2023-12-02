@@ -8,6 +8,8 @@ ADD_EXECUTABLE(game
     src/Combat.cpp
     src/Player.cpp
     src/PlayerType.cpp
+    src/Alien.cpp 
+    src/AlienType.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)
