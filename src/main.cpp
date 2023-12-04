@@ -25,9 +25,13 @@ int main() {
 
     while (!cMenu.getNext()) {
     cMenu.print();
-    //while !something to keep wrapping for invalid input
-    cMenu.printClass();
-    cMenu.input(3);
+
+    while (!cMenu.validClass()) {
+        cMenu.printClass();
+        cMenu.input(3);
+    }
+
+    cMenu.setClass();
     //end here
     cMenu.correct();
     }
