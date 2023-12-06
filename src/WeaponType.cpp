@@ -1,22 +1,14 @@
 #include "../header/WeaponType.h"
 #include <iostream>
 
-HeavyWeapon::HeavyWeapon(WeaponType wType, double attackDamage, double criticalChance, double durability, double staminaCost)
-    :Weapon(wType, attackDamage, criticalChance, durability, staminaCost)
-{
-    // wType = HeavyWeapon;
-    // attackDamage = 20.0
-    // criticalChance = 15;
-    // durability = 50;
-    // staminaCost = 20;
-}
+HeavyWeapon::HeavyWeapon(WeaponType type, string name, double attackDamage, double criticalChance)
+    :Weapon(type, attackDamage, criticalChance)
+{}
 
-LightWeapon::LightWeapon(WeaponType wType, double attackDamage, double criticalChance, double durability, double staminaCost)
-    :Weapon(wType, attackDamage, criticalChance, durability, staminaCost)
-{
-    // wType = LightWeapon;
-    // attackDamage = 10.0
-    // criticalChance = 45;
-    // durability = 30;
-    // staminaCost = 10;
-}
+MediumWeapon::MediumWeapon(WeaponType type, string name, double attackDamage, double criticalChance)
+    :Weapon(type, attackDamage, criticalChance)
+{}
+
+LightWeapon::LightWeapon(WeaponType type, string name, double attackDamage, double criticalChance)
+    :Weapon(type, attackDamage, criticalChance)
+{}
