@@ -19,9 +19,11 @@ void print();
 void setNext();
 void printClass();
 void correct();
+bool validClass();
+void setClass();
 
 //Made for testing as no Character class made
-string getName();
+
 };
 
 

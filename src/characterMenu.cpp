@@ -20,7 +20,7 @@ void characterMenu::printClass() {
 
 void characterMenu::correct() {
     //FIXME: add check for class
-    cout << endl << "Your name is " << name << " and you chose the Tank class." << endl;
+    cout << endl << "Your name is " << name << " and you chose the " << chosenClass << " class." << endl;
     cout << "Is this correct?" << endl;
     cout << "1. Yes" << endl;
     cout << "2. No" << endl;
@@ -38,16 +38,32 @@ void characterMenu::setNext() {
     else if (userInput == 2) {
         next = false;
     }
+    else {
+        correct();
+    }
 }
 
 bool characterMenu::getNext() {
     return next;
 }
 
-string characterMenu::getName() {
-    return name;
+void characterMenu::setClass() {
+    if (userInput == 1) {
+        chosenClass = "Tank";
+    }
+    else if (userInput == 2) {
+        chosenClass = "All-Around";
+    }
+    else if (userInput == 3) {
+        chosenClass = "Nimble";
+    }
 }
 
-void checkvalid() {
-    
+bool characterMenu::validClass() {
+    if (userInput == 1 || userInput == 2 || userInput == 3) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
