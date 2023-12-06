@@ -9,11 +9,11 @@ Weapon::Weapon(WeaponType type, string name, double attackDamage, double critica
 {}
 
 WeaponType Weapon::getType() const {
-    return type;
+    return wType;
 }
 
 WeaponType Weapon::getName() const {
-    return name;
+    return wName;
 }
 
 double Weapon::getAttackDamage() {
