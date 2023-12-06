@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include "../lib/Character.h"
-#include "../lib/Combat.h"
-#include "../lib/Player.h"
-#include "../lib/PlayerType.h"
+#include "../header/Character.h"
+#include "../header/Combat.h"
+#include "../header/Player.h"
+#include "../header/PlayerType.h"
 

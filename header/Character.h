@@ -1,8 +1,9 @@
+#include <string>
+
+using namespace std;
+
 #ifndef __CHARACTER_H__
 #define __CHARACTER_H__
-
-#include <string>
-using namespace std;
 
 enum CharacterType {PLAYER, ALIEN};
 

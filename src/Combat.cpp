@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../lib/Combat.h"
+#include "../header/Combat.h"
 
 void Combat::attack(Character &attacker, Character &attackee) {
     double damage = attacker.getAttackDamage();
@@ -9,4 +9,8 @@ void Combat::attack(Character &attacker, Character &attackee) {
 void Combat::block(Character &attacker, Character &attackee) {
     double damage = attacker.getAttackDamage() / 2.0;
     attackee.damage(damage);
+}
+
+void Combat::dodge(Character &attacker, Character &attackee) {
+    double damage = attacker.getAttackDamage();
 }

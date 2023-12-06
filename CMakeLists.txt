@@ -4,13 +4,13 @@ project(cs100finalproject)
 ADD_SUBDIRECTORY(googletest)
 
 ADD_EXECUTABLE(game
-    src/Character.cpp
+    src/Alien.cpp
+    src/AlienType.cpp
+    src/Character.cpp 
     src/Combat.cpp
+    src/main.cpp
     src/Player.cpp
     src/PlayerType.cpp
-    src/Alien.cpp 
-    src/AlienType.cpp
+    src/Weapon.cpp
+    src/WeaponType.cpp
 )
-
-TARGET_LINK_LIBRARIES(test gtest)
-TARGET_COMPILE_DEFINITIONS(test PRIVATE gtest_disable_pthreads=ON)

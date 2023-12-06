@@ -4,12 +4,12 @@
 
 using namespace std;
 
-Weapon::Weapon(WeaponType type, double attackDamage, double criticalChance, double durability, double staminaCost)
-    :type(type), attackDamage(attackDamage), criticalChance(criticalChance), durability(durability), staminaCost(staminaCost)
+Weapon::Weapon(WeaponType wType, double attackDamage, double criticalChance, double durability, double staminaCost)
+    :wType(wType), attackDamage(attackDamage), criticalChance(criticalChance), durability(durability), staminaCost(staminaCost)
 {}
 
 WeaponType Weapon::getType() const {
-    return type;
+    return wType;
 }
 
 double Weapon::getAttackDamage() {
