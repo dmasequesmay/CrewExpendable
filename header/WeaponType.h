@@ -1,5 +1,6 @@
 #ifndef WEAPONTYPE_H
 #define WEAPONTYPE_H
+#include <string>
 
 #include "../header/Weapon.h"
 using namespace std;
