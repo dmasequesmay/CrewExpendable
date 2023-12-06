@@ -1,4 +1,4 @@
-#include "../headers/storyTree.h"
+#include "../header/storyTree.h"
 #include <iostream>
 #include <cassert>
 

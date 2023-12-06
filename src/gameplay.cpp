@@ -1,5 +1,5 @@
-#include "../headers/gameplay.h"
-#include "../headers/storyTree.h"
+#include "../header/gameplay.h"
+#include "../header/storyTree.h"
 
 void gameMenu::print() {
     cout <<  endl << "===================================" << endl;

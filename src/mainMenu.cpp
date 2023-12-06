@@ -1,4 +1,4 @@
-#include "../headers/mainMenu.h"
+#include "../header/mainMenu.h"
 
 void mainMenu::print() {
     cout <<  endl << "===================================" << endl;

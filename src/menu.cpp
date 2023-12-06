@@ -1,4 +1,4 @@
-#include "../headers/menu.h"
+#include "../header/menu.h"
 
 void Menu::input(int max) {
     cin >> userInput;

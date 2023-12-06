@@ -1,4 +1,4 @@
-#include "../headers/node.h"
+#include "../header/node.h"
 
 Node::Node() {
     this->choice = "";
