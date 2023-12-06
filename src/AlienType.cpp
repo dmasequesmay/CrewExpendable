@@ -3,15 +3,15 @@
 
 using namespace std;
 
-TankAlien::TankAlien(const string &name, double health, double stamina, double attackDamage)
-    :Alien(name, health, stamina, attackDamage, TANKALIEN)
+TankAlien::TankAlien(const string &name, double health, double attackDamage)
+    :Alien(name, health, attackDamage, TANKALIEN)
 {}
 
 
-SlipperyAlien::SlipperyAlien(const string &name, double health, double stamina, double attackDamage)
-    :Alien(name, health, stamina, attackDamage, SLIPPERYALIEN)
+SlipperyAlien::SlipperyAlien(const string &name, double health, double attackDamage)
+    :Alien(name, health, attackDamage, SLIPPERYALIEN)
 {}
 
-BossAlien::BossAlien(const string &name, double health, double stamina, double attackDamage)
-    :Alien(name, health, stamina, attackDamage, BOSSALIEN) 
+BossAlien::BossAlien(const string &name, double health, double attackDamage)
+    :Alien(name, health, attackDamage, BOSSALIEN) 
 {}

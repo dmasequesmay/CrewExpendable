@@ -9,16 +9,16 @@ using namespace std;
 
 class TankAlien : public Alien {
     public: 
-        TankAlien(const string &name, double health, double stamina, double attackDamage);
+        TankAlien(const string &name, double health, double attackDamage);
 };
 
 class SlipperyAlien : public Alien {
     public: 
-        SlipperyAlien(const string &name, double health, double stamina, double attackDamage);
+        SlipperyAlien(const string &name, double health, double attackDamage);
 };
 
 class BossAlien : public Alien {
     public: 
-        BossAlien(const string &name, double health, double stamina, double attackDamage);
+        BossAlien(const string &name, double health, double attackDamage);
 };
 #endif

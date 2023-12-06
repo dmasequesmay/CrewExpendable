@@ -7,17 +7,12 @@ using namespace std;
 
 class HeavyWeapon : public Weapon {
     public: 
-        HeavyWeapon(WeaponType type, string name, double attackDamage, double criticalChance);
-};
-
-class MediumWeapon : public Weapon {
-    public:
-        MediumWeapon(WeaponType type, string name, double attackDamage, double criticalChance);
+        HeavyWeapon(string name, double attackDamage, double criticalChance);
 };
 
 class LightWeapon : public Weapon {
     public: 
-        LightWeapon(WeaponType type, string name, double attackDamage, double criticalChance);
+        LightWeapon(string name, double attackDamage, double criticalChance);
 };
 
 #endif

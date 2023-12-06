@@ -4,8 +4,8 @@
 
 using namespace std;
 
-Character::Character (CharacterType type, const string &name, double health, double stamina, double attackDamage) 
-    :type(type), name(name), health(health), stamina(stamina), attackDamage(attackDamage)
+Character::Character (CharacterType type, const string &name, double health, double attackDamage) 
+    :type(type), name(name), health(health), attackDamage(attackDamage)
 {}
 
 CharacterType Character::getType() const {
@@ -18,10 +18,6 @@ const string & Character::getName() const {
 
 int Character::getHealth() const {
     return static_cast<int>(health);
-}
-
-int Character::getStamina() const {
-    return static_cast<int>(stamina);
 }
 
 int Character::getAttackDamage() const {
