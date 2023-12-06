@@ -13,4 +13,10 @@ ADD_EXECUTABLE(game
     src/PlayerType.cpp
     src/Weapon.cpp
     src/WeaponType.cpp
+    src/gameplay.cpp
+    src/mainMenu.cpp
+    src/characterMenu.cpp
+    src/menu.cpp
+    src/storyTree.cpp
+    src/node.cpp
 )
