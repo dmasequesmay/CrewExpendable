@@ -12,7 +12,7 @@ WeaponType Weapon::getType() const {
     return wType;
 }
 
-WeaponType Weapon::getName() const {
+string Weapon::getName() const {
     return wName;
 }
 
