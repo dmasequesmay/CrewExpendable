@@ -21,7 +21,8 @@ void printClass();
 void correct();
 bool validClass();
 void setClass();
-
+string getName();
+string classChosen();
 //Made for testing as no Character class made
 
 };

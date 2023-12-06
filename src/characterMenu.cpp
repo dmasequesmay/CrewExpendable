@@ -67,3 +67,11 @@ bool characterMenu::validClass() {
         return false;
     }
 }
+
+string characterMenu::getName() {
+    return name;
+}
+
+string characterMenu::classChosen() {
+    return chosenClass;
+}
