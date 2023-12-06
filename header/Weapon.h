@@ -1,26 +1,24 @@
 #ifndef WEAPON_H
 #define WEAPON_H
+#include <string>
 
 using namespace std;
 
-enum WeaponType {HEAVYWEAPON, LIGHTWEAPON};
+enum WeaponType {HEAVYWEAPON, MEDIUMWEAPON, LIGHTWEAPON};
 
 class Weapon {
     protected:
         WeaponType wType;
+        string wName;
         double attackDamage;
         double criticalChance;
-        double durability;
-        double staminaCost;
 
     public:
-        Weapon(WeaponType type, double attackDamage, double criticalChance, double durability, double staminaCost);
-        
+        Weapon(WeaponType type, string name, double attackDamage, double criticalChance);
         WeaponType getType() const;
+        WeaponType getName() const;
         double getAttackDamage();
         double getCriticalChance();
-        double getDurability();
-        double getStaminaCost();
 };
 
 #endif
