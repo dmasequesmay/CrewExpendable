@@ -6,12 +6,12 @@ using namespace std;
 
 class HeavyWeapon : public Weapon {
     public: 
-        HeavyWeapon(WeaponType type, double attackDamage, double criticalChance, double durability, double staminaCost);
+        HeavyWeapon(string name, double attackDamage, double criticalChance);
 };
 
 class LightWeapon : public Weapon {
     public: 
-        LightWeapon(WeaponType type, double attackDamage, double criticalChance, double durability, double staminaCost);
+        LightWeapon(string name, double attackDamage, double criticalChance);
 };
 
 #endif

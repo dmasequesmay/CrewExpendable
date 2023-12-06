@@ -12,7 +12,7 @@ class Alien : public Character {
     protected:
         AlienType alienClass;
     public:
-        Alien(const string &name, double health, double stamina, double attackDamage, AlienType alienClass);
+        Alien(const string &name, double health, double attackDamage, AlienType alienClass);
 };
 
 #endif

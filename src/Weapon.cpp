@@ -4,16 +4,16 @@
 
 using namespace std;
 
-Weapon::Weapon(WeaponType type, string name, double attackDamage, double criticalChance)
-    :wType(type), wName(name), attackDamage(attackDamage), criticalChance(criticalChance)
+Weapon::Weapon(WeaponType wType, string name, double attackDamage, double criticalChance)
+    :wType(wType), wName(name), attackDamage(attackDamage), criticalChance(criticalChance)
 {}
 
 WeaponType Weapon::getType() const {
-    return type;
+    return wType;
 }
 
-WeaponType Weapon::getName() const {
-    return name;
+string Weapon::getName() const {
+    return wName;
 }
 
 double Weapon::getAttackDamage() {
