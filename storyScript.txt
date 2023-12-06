@@ -1,0 +1,22 @@
+The year is 2200. You were recently employed by RTech, the biggest space corporation in New America. Truthfully speaking, you were surprised you were hired given your complete lack of experience but grateful nonetheless. You are an “asset retrieval assistant” who has been assigned to your very first task. You were informed that a mining crew from the RTech extraction division was recently sent out to a remote planet as part of the new expansion project. Apparently there was an incident, so you, along with a partner have been tasked with securing and retrieving important company assets. 
+As you walk into the transfer station, you observe the company issued shuttle pod that you would be taking. It looks like an old, rusty piece of junk that was made in the 2150’s. You’re not quite sure you trust it to take the two of you to your destination in one piece. Nonetheless, you embark on your journey along with your partner. On the way to your destination, you decide to get to know your coworker better. You introduce yourself and ask them for their name, to which they respond, “I’m Cyttos, nice to meet ya.” 
+You decide to make some small talk with Cyttos:|
+^
+
+“Is this your first assignment too?”|
+"Nah, this’s my second," Cyttos answers. You feel a bit relieved, knowing that Cyttos could probably teach you the ropes. “Ah, I barely did jack though, mostly just let my partner do the work.” You raise an eyebrow. “Relax, I’m just messin’ with ya... half messing…” Cyttos winks.^
+
+“Do you know how to work the controls on this thing?”|
+“Nah, this thing is locked in autopilot mode, so there’s no need. Only control we got over this piece of metal is an emergency brake.” “And that’s where?” you ask. “Uh… yeah, no clue. Think it should be in the manual somewhere around here? Dunno where that would be either though, I forgot.”^
+
+Cyttos doesn’t seem very reliable, but at least they’re friendly. You wonder what else you could talk to Cyttos about:|
+^
+
+“This thing doesn’t seem safe, huh?”|
+“I mean, it ain’t the worst ride I’ve been in before. Doesn’t make it any less of a sketchy piece of junk though. Corpo’s do love their budget cuts. Not like we can do much about it,” Cyttos shrugs.^
+
+“Do you know what happened to the mining crew?”|
+“Only as much as they told us. So nothin’. That’s RTech for ya.”^
+
+Cyttos yawns. “Well, I’ma catch some Zs, it’s gonna be a hot minute till we get there. I’d recommend you do the same if you don’t wanna die of boredom.”|
+^
