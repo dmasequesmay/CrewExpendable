@@ -30,9 +30,39 @@ void gameMenu::inputSelect(storyTree& t) {
 
 void gameMenu::action(storyTree& tree) {
     cout <<  endl << "===================================" << endl;
-    tree.leftChoice();
-    tree.rightChoice();
-    cout << "===================================" << endl;
+    if (tree.isLeaf(tree.curr)) {
+        cout << "NO MORE STORY" << endl;
+        return;
+    }
+    else if (tree.curr->getLeftChild() != nullptr && tree.curr->getRightChild() == nullptr) {
+        tree.prev = tree.curr; 
+        tree.curr = tree.curr->getLeftChild();
+        cout << tree.curr->getChoice() << endl;
+    }
+    else {
+        cout << "1. " << tree.curr->getLeftChild()->getChoice() << endl;
+        cout << "2. " << tree.curr->getRightChild()->getChoice() << endl;
+        cout << "===================================" << endl;
+
+        int userInput = 0;
+        cout << "What will you do? ";
+        cin >> userInput;
+        cout << endl << "===================================" << endl;
+
+        if (userInput == 1) {
+            tree.moveLeft();
+            cout << tree.curr->getDescription() << endl;
+        }
+        else if (userInput == 2) {
+            tree.moveRight();
+            cout << tree.curr->getDescription() << endl;
+        }
+        else if (userInput > 2 || !cin.good()) {
+            cin.clear();
+            cin.ignore();
+            cout << "Invalid Input!" << endl;
+        }
+    }
 }
 
 void gameMenu::inv() {

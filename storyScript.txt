@@ -3,17 +3,20 @@ As you walk into the transfer station, you observe the company issued shuttle po
 You decide to make some small talk with Cyttos:|
 ^
 
-a) “Is this your first assignment too?”|
+“Is this your first assignment too?”|
 "Nah, this’s my second," Cyttos answers. You feel a bit relieved, knowing that Cyttos could probably teach you the ropes. “Ah, I barely did jack though, mostly just let my partner do the work.” You raise an eyebrow. “Relax, I’m just messin’ with ya... half messing…” Cyttos winks.^
 
-b) “Do you know how to work the controls on this thing?”|
+“Do you know how to work the controls on this thing?”|
 “Nah, this thing is locked in autopilot mode, so there’s no need. Only control we got over this piece of metal is an emergency brake.” “And that’s where?” you ask. “Uh… yeah, no clue. Think it should be in the manual somewhere around here? Dunno where that would be either though, I forgot.”^
 
 Cyttos doesn’t seem very reliable, but at least they’re friendly. You wonder what else you could talk to Cyttos about:|
 ^
 
-a) “This thing doesn’t seem safe, huh?”|
+“This thing doesn’t seem safe, huh?”|
 “I mean, it ain’t the worst ride I’ve been in before. Doesn’t make it any less of a sketchy piece of junk though. Corpo’s do love their budget cuts. Not like we can do much about it,” Cyttos shrugs.^
 
-b) “Do you know what happened to the mining crew?”|
+“Do you know what happened to the mining crew?”|
 “Only as much as they told us. So nothin’. That’s RTech for ya.”^
+
+Cyttos yawns. “Well, I’ma catch some Zs, it’s gonna be a hot minute till we get there. I’d recommend you do the same if you don’t wanna die of boredom.”|
+^

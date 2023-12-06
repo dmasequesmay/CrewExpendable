@@ -34,7 +34,7 @@ int main() {
 
     cout <<  endl << "===================================" << endl;
     storyTree Tree = storyTree();
-    Tree.currChoice(); // PROLOGUE 
+    cout << Tree.curr->getChoice() << endl; // PROLOGUE 
     wait();
     cout << "===================================" << endl;
 
