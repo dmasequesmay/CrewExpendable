@@ -18,5 +18,11 @@ Cyttos doesn’t seem very reliable, but at least they’re friendly. You wonder
 “Do you know what happened to the mining crew?”|
 “Only as much as they told us. So nothin’. That’s RTech for ya.”^
 
+“Do they usually give us this little to go off of?”|
+“Pretty much. And they don’t like when we ask questions.”^
+
+“It’s nothing dangerous right?”|
+“Eh, you’re probably thinking too much about it. If it were actually dangerous, they’d make sure we were actually qualified to deal with it and all that.”^
+
 Cyttos yawns. “Well, I’ma catch some Zs, it’s gonna be a hot minute till we get there. I’d recommend you do the same if you don’t wanna die of boredom.”|
 ^
