@@ -1,8 +1,13 @@
+#include <iostream>
 #include "../headers/mainMenu.h"
 #include "../headers/gameplay.h"
 #include "../headers/characterMenu.h"
 #include "../headers/node.h"
 #include "../headers/storyTree.h"
+#include "../header/Character.h"
+#include "../header/Combat.h"
+#include "../header/Player.h"
+#include "../header/PlayerType.h"
 
 using namespace std;
 
