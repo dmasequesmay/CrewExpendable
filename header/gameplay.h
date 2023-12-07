@@ -21,7 +21,7 @@ class gameMenu : public Menu {
         void action(storyTree& t, Player &player);
         void stats(Player &p);
         void inv(Player &p);
-        void quit(storyTree& t);
+        void quit(storyTree& t, Player &player);
         bool getEnding() const;
 };
 
