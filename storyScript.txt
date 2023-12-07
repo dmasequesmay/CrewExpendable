@@ -34,10 +34,10 @@ Your eyes flicker open as you regain consciousness. Your ears are ringing and th
 Which do you enter?|
 ^
 
-You enter the door on your left:|
+You enter the door labeled "MEDICAL" on your left.|
 Considering the circumstances, you feel the need to gather supplies. You push open the door and enter a small cramped room. Most of the cabinets are tilted open with medical supplies strewn across the floor. Seems like most of it isn’t salvageable. You search through drawers until you find one with a bunch of broken syringes. You pick through them and find one intact healing syringe, which you pocket. Scanning the counter to your right, you also notice a large pair of scissors. You grab it just in case.^
 
-You enter the door on your right:|
+You enter the door labeled "STORAGE" on your right.|
 Considering the circumstances, you feel the need to gather supplies. You push open the heavy door to reveal a room lined with tall metal shelves and cabinets. All but one of the metal cabinets have been knocked over and into the shelves in the back left corner. You look to the shelves on your immediate left and notice a large monkey wrench. You turn to your right and open the sole upright cabinet to find a crowbar propped up inside. 
 Which do you grab?^
 
