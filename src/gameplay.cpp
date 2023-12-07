@@ -49,8 +49,9 @@ void gameMenu::action(storyTree& tree, Player &player) {
         return;
     }
     else {
-        // if (tree.curr == v.at(x)) {
-        //     // add to inventory
+        // if (tree.curr == tree.v.at(9)) {
+        //     player.addInventory("1x Healing Syringe");
+        //     player.addInventory("Large Pair of Scissors");
         // }
         // CHECK IF INVENTORY NEEDS TO BE UPDATED
         // CHECK IF ENCOUNTER
