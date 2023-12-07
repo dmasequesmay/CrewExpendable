@@ -20,5 +20,4 @@ class Weapon {
         double getAttackDamage();
         double getCriticalChance();
 };
-
 #endif
