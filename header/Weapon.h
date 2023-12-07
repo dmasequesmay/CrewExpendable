@@ -17,7 +17,7 @@ class Weapon {
     public:
         Weapon(WeaponType type, string name, double attackDamage, double criticalChance);
         WeaponType getType() const;
-        string getName() const;
+        virtual string getName() const;
         double getAttackDamage();
         double getCriticalChance();
 };
