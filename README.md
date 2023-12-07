@@ -47,7 +47,7 @@ Battle/Evade: If the user were to choose the evade option: they will be shown if
 
 Action/Out of battle: When out of battle, the user is able to move from one room to another. The user will be given prompts on which way to go, and inputting a number will change the room that they are in.
  
-View Inventory: This screen will show the items the player has in their inventory as well as how many they have of each. The user will be able to use items to heal or get more oxygen. The user will be prompted to input a number to choose an item and what to do with it. They will also have the option to go back to the gameplay menu.
+View Inventory: This screen will show the items the player has in their inventory as well as how many they have of each.
 
 View Statistics: This screen will show the user their statistics such as health, oxygen level, and stamina. The user will be prompted to press enter in order to exit the screen and return to the gameplay menu.
 
