@@ -13,8 +13,13 @@
 #include "../header/Weapon.h"
 #include "../header/WeaponType.h"
 
-gameMenu::gameMenu()
-{}
+gameMenu::gameMenu() {
+    endingType = false;
+}
+
+bool gameMenu::getEnding() const {
+    return endingType;
+}
 
 void gameMenu::print() {
     cout <<  endl << "===================================" << endl;
@@ -51,12 +56,26 @@ void gameMenu::action(storyTree& tree, Player &player) {
         return;
     }
     else {
-        // if (tree.curr == tree.v.at(9)) {
-        //     player.addInventory("1x Healing Syringe");
-        //     player.addInventory("Large Pair of Scissors");
-        // }
         // CHECK IF INVENTORY NEEDS TO BE UPDATED
-        // CHECK IF ENCOUNTER
+        if (tree.curr == tree.v.at(9)) {
+            string healItem = "1x Healing Syringe";
+            string lightWeapon = "Light Weapon";
+            player.addInventory(healItem);
+            player.addInventory(lightWeapon);
+        }
+        else if (tree.curr == tree.v.at(11)) {
+            string mediumWeapon = "Medium Weapon";
+            player.addInventory(mediumWeapon);
+        }
+        else if (tree.curr == tree.v.at(12)) {
+            string heavyWeapon = "Heavy Weapon";
+            player.addInventory(heavyWeapon);
+        }
+        // endingType true = fight slipperyAlien
+        // endingType false = fight tankAlien
+        if (tree.curr == tree.v.at(14)) {
+            endingType = true;
+        }
         if (tree.curr->getLeftChild() != nullptr && tree.curr->getRightChild() == nullptr) {
             tree.prev = tree.curr; 
             tree.curr = tree.curr->getLeftChild();
