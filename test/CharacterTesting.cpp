@@ -19,29 +19,39 @@ int main() {
         cout << "Choose a type of alien:" << endl;
         cout << "1. Tank\n 2. Slippery\n 3. Boss\n";
         cin >> userChoice2;
-        if (userChoice == 1) {
+        if (userChoice2 == 1) {
             cout << "YOU CHOSE: Tank Alien" << endl;
-            Character newAlien = new TankAlien(charName,180.0,100.0,25.0,TANKALIEN);
+            Character newAlien = new Alien(charName,180.0, 25.0, TANKALIEN);
             cout << "Displaying Stats:\n";
             cout << "Type: " << newAlien.getType() << endl;
             cout << "Name: " << newAlien.getName() << endl;
             cout << "Health: " << newAlien.getHealth() << endl;
-            cout << "Stamina: " << newAlien.getStamina() << endl;
             cout << "Attack Damage: " << newAlien.getAttackDamage() << endl;
-
         }
-        else if (userChoice == 2) {
+        else if (userChoice2 == 2) {
             cout << "YOU CHOSE: Slippery Alien" << endl;
+            Character newAlien = new Alien(charName, 120.0, 15.0, SLIPPERYALIEN);
+            cout << "Displaying Stats:\n";
+            cout << "Type: " << newAlien.getType() << endl;
+            cout << "Name: " << newAlien.getName() << endl;
+            cout << "Health: " << newAlien.getHealth() << endl;
+            cout << "Attack Damage: " << newAlien.getAttackDamage() << endl;
         }
-        else if (userChoice == 3) {
+        else if (userChoice2 == 3) {
             cout << "YOU CHOSE: Boss Alien" << endl;
+            Character newAlien = new Alien(charName, 200.0, 30.0, BOSSALIEN);
+            cout << "Displaying Stats:\n";
+            cout << "Type: " << newAlien.getType() << endl;
+            cout << "Name: " << newAlien.getName() << endl;
+            cout << "Health: " << newAlien.getHealth() << endl;
+            cout << "Attack Damage: " << newAlien.getAttackDamage() << endl;
         }
         else {
-            cout << "Invalid Option: [EXITING]";
+            "Invalid Option: [EXITING]";
         }
     }
     else {
-        cout << "Invalid input: [EXITING]";
+        cout << "Invalid Option: [EXITING]";
     }
     
 
