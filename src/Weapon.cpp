@@ -8,7 +8,7 @@ Weapon::Weapon(WeaponType wType, string name, double attackDamage, double critic
     :wType(wType), wName(name), attackDamage(attackDamage), criticalChance(criticalChance)
 {}
 
-WeaponType Weapon::getType() const {
+WeaponType Weapon::getType() const{
     return wType;
 }
 

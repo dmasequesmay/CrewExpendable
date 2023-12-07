@@ -18,11 +18,10 @@ The output of our project includes menus and storylines. The game will display a
 This project will consist of a text-based role-playing game (RPG) that implements a Space Exploration theme. The game will have a navigation map, where a character can venture to different planets and environments. Exploring different planets will lead to alien encounters, where the character can either be allies with the new species to gain resources and replenish inventory or conquer the new species through attacks. The user will be able to access a menu of their character's statistics before making any decisions. This menu will include the character's current health, resources/inventory, oxygen levels, attack damage, etc. 
 
 ## User Interface Specification
-Include a navigation diagram for your screens and the layout of each of those screens as desribed below. For all the layouts/diagrams, you can use any tool such as PowerPoint or a drawing program. (Specification requirement is adapted from [this template](https://redirect.cs.umbc.edu/~mgrass2/cmsc345/Template_UI.doc)
 
 ### Navigation Diagram
 The user should start at the Title Screen and enter their character details upon selecting the start game option. From there, the story will begin. The user should progress to a screen which displays a description of what is happening in their story playthrough and be given a list of menu options to either: view stats, view inventory, act, or quit. The user will repeatedly use this menu to progress through the story until they lose or win.
-![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/0ec523d8767b7ca09cc063ce7f28f466b293e2f6/User_Navigation_Diagram-1.jpg)
+![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/master/User_Navigation_Diagram-1.jpg)
 
 ### Screen Layouts
 Main menu: The main menu of the game will include the name of the game and a start/quit option. Pressing quit will exit the program, while the next screen will lead you to the input name screen. The prompts for the user include inputting a number: 1) Start and 2) Quit.
@@ -47,7 +46,7 @@ Battle/Evade: If the user were to choose the evade option: they will be shown if
 
 Action/Out of battle: When out of battle, the user is able to move from one room to another. The user will be given prompts on which way to go, and inputting a number will change the room that they are in.
  
-View Inventory: This screen will show the items the player has in their inventory as well as how many they have of each. The user will be able to use items to heal or get more oxygen. The user will be prompted to input a number to choose an item and what to do with it. They will also have the option to go back to the gameplay menu.
+View Inventory: This screen will show the items the player has in their inventory as well as how many they have of each.
 
 View Statistics: This screen will show the user their statistics such as health, oxygen level, and stamina. The user will be prompted to press enter in order to exit the screen and return to the gameplay menu.
 

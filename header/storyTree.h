@@ -12,7 +12,6 @@ using std::vector;
 
 class storyTree {
     private: 
-        vector<Node*> v; 
         const string fileName;
         int height;
     public:
@@ -20,6 +19,7 @@ class storyTree {
         ~storyTree();
         Node* curr; // Pointer to the node where the player currently is in the storyTree
         Node* prev; // Pointer to the parent node (previous player decision)
+        vector<Node*> v; 
         void parseSource(); // Takes strings from text file and builds a vector of nodes
         void moveLeft(); // before moving, set prev to curr and then curr to children
         void moveRight();
