@@ -12,6 +12,7 @@ using namespace std;
 
 class gameMenu : public Menu {
     protected:
+        bool endingType;
     public:
         gameMenu();
         void print();
@@ -21,6 +22,7 @@ class gameMenu : public Menu {
         void stats(Player &p);
         void inv(Player &p);
         void quit(storyTree& t);
+        bool getEnding() const;
 };
 
 #endif
