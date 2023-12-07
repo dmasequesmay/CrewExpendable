@@ -29,9 +29,3 @@ ADD_EXECUTABLE(charTest
     src/PlayerType.cpp
     test/CharacterTesting.cpp
 )
-
-ADD_EXECUTABLE(storyTest
-    test/storytest.cpp
-    src/node.cpp
-    src/storyTree.cpp
-)
