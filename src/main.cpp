@@ -1,13 +1,19 @@
 #include <iostream>
-#include "../header/mainMenu.h"
-#include "../header/gameplay.h"
-#include "../header/characterMenu.h"
-#include "../header/node.h"
-#include "../header/storyTree.h"
+#include <vector>
+#include "../header/Alien.h"
+#include "../header/AlienType.h"
 #include "../header/Character.h"
+#include "../header/characterMenu.h"
 #include "../header/Combat.h"
+#include "../header/gameplay.h"
+#include "../header/mainMenu.h"
+#include "../header/menu.h"
+#include "../header/node.h"
 #include "../header/Player.h"
 #include "../header/PlayerType.h"
+#include "../header/storyTree.h"
+#include "../header/Weapon.h"
+#include "../header/WeaponType.h"
 
 using namespace std;
 
@@ -27,6 +33,13 @@ int main() {
     main.input(3);
     main.choice();
     }
+    vector<string> inventory;
+    Player newPlayer(inventory);
+    string name = cMenu.getName();
+    double health;
+    double attackDamage;
+    double heal;
+    PlayerType type;
 
     while (!cMenu.getNext()) {
     cMenu.print();
@@ -37,10 +50,31 @@ int main() {
     }
 
     cMenu.setClass();
-    //end here
+    //Make player objects
+        
+    if (cMenu.classChosen() == "Tank") {
+        health = 115;
+        attackDamage = 10;
+        heal = 10;
+        type = TANKPLAYER;
+    }
+    else if (cMenu.classChosen() == "All-Around") {
+        health = 100;
+        attackDamage = 15;
+        heal = 15;
+        type = ALLROUNDERPLAYER;
+    }
+    else {
+        health = 90;
+        attackDamage = 20;
+        heal = 20;
+        type = NIMBLEPLAYER;
+    }
+    
     cMenu.correct();
     }
 
+    newPlayer = Player(name, health, attackDamage, type, inventory, heal);
     cout <<  endl << "===================================" << endl;
     storyTree Tree = storyTree();
     cout << "Prologue: " << endl;
@@ -48,11 +82,13 @@ int main() {
     wait();
     cout << "===================================" << endl;
 
+    //Combat
+
 //while(1) only used for testing purposes
     while (1) {
     game.print();
     game.input(5);
-    game.inputSelect(Tree);
+    game.inputSelect(Tree, newPlayer);
     }
 
     return 0;

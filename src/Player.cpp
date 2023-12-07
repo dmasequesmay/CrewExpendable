@@ -3,6 +3,10 @@
 
 #include "../header/Player.h"
 
+Player::Player(vector<string> inventory)
+    :Character(PLAYER,"", 0, 0), pType(TANKPLAYER), inventory(inventory), heal(0)
+{}
+
 Player::Player(const string &name, double health, double attackDamage, PlayerType pType, vector<string> inventory, double heal)
     :Character(PLAYER, name, health, attackDamage), pType(pType), inventory(inventory), heal(heal)
 {}
