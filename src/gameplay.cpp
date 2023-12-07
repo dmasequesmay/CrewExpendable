@@ -13,6 +13,8 @@
 #include "../header/Weapon.h"
 #include "../header/WeaponType.h"
 
+gameMenu::gameMenu()
+{}
 
 void gameMenu::print() {
     cout <<  endl << "===================================" << endl;
