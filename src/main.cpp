@@ -43,6 +43,7 @@ int main() {
 
     cout <<  endl << "===================================" << endl;
     storyTree Tree = storyTree();
+    cout << "Prologue: " << endl;
     cout << Tree.curr->getChoice() << endl; // PROLOGUE 
     wait();
     cout << "===================================" << endl;
