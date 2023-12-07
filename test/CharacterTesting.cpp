@@ -4,6 +4,8 @@
 #include "../header/AlienType.h"
 #include "../header/Player.h"
 #include "../header/PlayerType.h"
+#include "../header/Weapon.h"
+#include "../header/WeaponType.h"
 
 int main() {
     string charName;
@@ -21,18 +23,17 @@ int main() {
         cin >> userChoice2;
         if (userChoice2 == '1') {                          
             cout << "YOU CHOSE: Tank Player" << endl;
-            TankPlayer newPlayer(charName, 150.0, 15.0, items);
+            TankPlayer newPlayer(charName, 150.0, 15.0, items, 15.0);
             cout << "Displaying Stats:\n";
             cout << "  Type: " << newPlayer.getType() << endl;
             cout << "  Name: " << newPlayer.getName() << endl;
             cout << "  Health: " << newPlayer.getHealth() << endl;
             cout << "  Attack Damage: " << newPlayer.getAttackDamage() << endl;
             cout << "  Items in Inventory: " << items.at(0) << ", " << items.at(1) << endl;
-
         }
         else if (userChoice2 == '2') {
             cout << "YOU CHOSE: Nimble Player" << endl;
-            NimblePlayer newPlayer(charName, 90.0, 20.0, items);
+            NimblePlayer newPlayer(charName, 90.0, 20.0, items, 15.0);
             cout << "Displaying Stats:\n";
             cout << "  Type: " << newPlayer.getType() << endl;
             cout << "  Name: " << newPlayer.getName() << endl;
@@ -42,7 +43,7 @@ int main() {
         }
         else if (userChoice2 == '3') {
             cout << "YOU CHOSE: All Rounder Player" << endl;
-            AllRounderPlayer newPlayer(charName, 110.0, 20.0, items);
+            AllRounderPlayer newPlayer(charName, 110.0, 20.0, items, 15.0);
             cout << "Displaying Stats:\n";
             cout << "  Type: " << newPlayer.getType() << endl;
             cout << "  Name: " << newPlayer.getName() << endl;
@@ -94,6 +95,7 @@ int main() {
     else {
         cout << "Invalid Option: [EXITING]";
     }
+
 
 
     return 0;
