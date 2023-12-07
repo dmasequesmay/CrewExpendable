@@ -35,7 +35,6 @@ int main() {
     }
     vector<string> inventory;
     Player newPlayer(inventory);
-    string name = cMenu.getName();
     double health;
     double attackDamage;
     double heal;
@@ -74,6 +73,8 @@ int main() {
     cMenu.correct();
     }
 
+    string name = cMenu.getName();
+
     newPlayer = Player(name, health, attackDamage, type, inventory, heal);
     cout <<  endl << "===================================" << endl;
     storyTree Tree = storyTree();
@@ -84,7 +85,7 @@ int main() {
 
     //Combat
 
-//while(1) only used for testing purposes
+    //while(1) only used for testing purposes
     while (1) {
     game.print();
     game.input(5);

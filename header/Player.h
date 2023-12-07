@@ -20,6 +20,7 @@ class Player : public Character {
     public: 
         Player(vector<string> inventory);
         Player(const string &name, double health, double attackDamage, PlayerType pType, vector<string> inventory, double heal);
+        ~Player();
         //Returns the names of each object listed in the inventory array
         void getInventory();
         void addInventory(string &inventoryName);

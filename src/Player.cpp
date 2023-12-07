@@ -11,6 +11,12 @@ Player::Player(const string &name, double health, double attackDamage, PlayerTyp
     :Character(PLAYER, name, health, attackDamage), pType(pType), inventory(inventory), heal(heal)
 {}
 
+Player::~Player() {
+    for (int i = 0; i < inventory.size(); ++i) {
+        inventory.pop_back();
+    }
+}
+
 int Player::getHeal() {
     return static_cast<int>(health);
 }
