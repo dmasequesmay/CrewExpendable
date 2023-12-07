@@ -7,15 +7,12 @@ Player::Player(const string &name, double health, double attackDamage, PlayerTyp
     :Character(PLAYER, name, health, attackDamage), pType(pType), inventory(inventory), heal(heal)
 {}
 
-int Player::getHeal() {
-    return static_cast<int>(health);
+void Player::getHeal() {
+    this->health += 25.0;
 }
 
 void Player::getInventory() {
     for(int i = 0; i < inventory.size(); ++i) {
-        if (hasHeal()) {
-            cout << i + 1 << ". " << inventory.at(i) << ": " << getHeal() << endl;
-        }
         cout << i + 1 << ". " << inventory.at(i) << endl;
     }
 }

@@ -27,7 +27,7 @@ class Player : public Character {
         bool hasMediumWeapon();
         bool hasLightWeapon();
         bool hasHeal();
-        int getHeal();
+        void getHeal();
 };
 
 #endif

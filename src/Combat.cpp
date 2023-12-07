@@ -21,5 +21,5 @@ void Combat::block(Character &attacker, Character &defender) {
 
 void Combat::dodge(Character &attacker, Character &defender) {
     double damage = (defender.getHealth() / MAX_HEALTH) * defender.getAttackDamage();
-    cout << "The " << attacker.getName() " attacks! " << defender.getName() << " was able to successfully dodge the attack and take no damage!" << endl;
+    cout << attacker.getName() << " attacks! " << defender.getName() << " was able to successfully dodge the attack and take no damage!" << endl;
 }
