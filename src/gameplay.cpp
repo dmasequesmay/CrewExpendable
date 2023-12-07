@@ -82,7 +82,10 @@ void gameMenu::stats() {
 void gameMenu::help() {
     cout <<  endl << "===================================" << endl;
     cout << "HELP" << endl;
-    cout << "*IMPLEMENT HELP SCREEN*" << endl;
+    cout << "Space Game is a simple text-based RPG that is controlled by inputting numbers to decide what you want to do." << endl;
+    cout << "View Inventory: shows you what you currently have in your inventory" << endl;
+    cout << "View Health shows your current health" << endl;
+    
     cout << "===================================" << endl;
 }
 

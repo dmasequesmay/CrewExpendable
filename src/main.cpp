@@ -37,15 +37,14 @@ int main() {
     }
 
     cMenu.setClass();
-    //end here
     cMenu.correct();
     }
 
     cout <<  endl << "===================================" << endl;
     storyTree Tree = storyTree();
     cout << Tree.curr->getChoice() << endl; // PROLOGUE 
-    wait();
     cout << "===================================" << endl;
+    wait();
 
 //while(1) only used for testing purposes
     while (1) {
