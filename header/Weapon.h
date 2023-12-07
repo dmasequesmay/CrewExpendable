@@ -1,6 +1,7 @@
 #ifndef WEAPON_H
 #define WEAPON_H
 #include <string>
+#include "../header/Character.h"
 
 using namespace std;
 
@@ -20,5 +21,4 @@ class Weapon {
         double getAttackDamage();
         double getCriticalChance();
 };
-
 #endif

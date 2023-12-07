@@ -3,6 +3,8 @@
 
 #include <string>
 #include "../header/Character.h"
+#include "../header/Weapon.h"
+#include "../header/WeaponType.h"
 
 using namespace std;
 
