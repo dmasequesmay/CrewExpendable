@@ -20,3 +20,12 @@ ADD_EXECUTABLE(game
     src/storyTree.cpp
     src/node.cpp
 )
+
+ADD_EXECUTABLE(charTest
+    src/Alien.cpp
+    src/AlienType.cpp
+    src/Character.cpp
+    src/Player.cpp
+    src/PlayerType.cpp
+    test/CharacterTesting.cpp
+)
