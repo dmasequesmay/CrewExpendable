@@ -23,8 +23,11 @@ storyTree::storyTree() : fileName("storyScript.txt"), height(0) {
     v.at(2)->setLeftChild(v.at(3));
     v.at(3)->setLeftChild(v.at(4));
     v.at(3)->setRightChild(v.at(5));
-    v.at(4)->setLeftChild(v.at(6));
     v.at(5)->setLeftChild(v.at(6));
+    v.at(5)->setRightChild(v.at(7));
+    v.at(4)->setLeftChild(v.at(8));
+    v.at(6)->setLeftChild(v.at(8));
+    v.at(7)->setLeftChild(v.at(8));
     // complete story
 };
 storyTree::~storyTree() {

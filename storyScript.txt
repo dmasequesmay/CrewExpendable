@@ -18,5 +18,18 @@ Cyttos doesn’t seem very reliable, but at least they’re friendly. You wonder
 “Do you know what happened to the mining crew?”|
 “Only as much as they told us. So nothin’. That’s RTech for ya.”^
 
-Cyttos yawns. “Well, I’ma catch some Zs, it’s gonna be a hot minute till we get there. I’d recommend you do the same if you don’t wanna die of boredom.”|
+“Do they usually give us this little to go off of?”|
+“Pretty much. And they don’t like when we ask questions.”^
+
+“It’s nothing dangerous right?”|
+“Eh, you’re probably thinking too much about it. If it were actually dangerous, they’d make sure we were actually qualified to deal with it and all that.”^
+
+Cyttos yawns. “Well, I’ma catch some Zs, it’s gonna be a hot minute till we get there. I’d recommend you do the same if you don’t wanna die of boredom.” Heeding their advice, you shut your eyes and drift off to sleep, wondering what the planet would be like.
+
+An indeterminate amount of time later…
+
+A violent jolt rips you from your sleep. Flashing red lights attack your tired eyes as loud, blaring alarms ring out through the ship. Something is very wrong and you wonder what the hell happened during your sleep. You look over to your right to see Cyttos frantically searching for the ship manual. You yell, “What the hell happened?”, to which Cyttos yells back, “I don’t know! I think something hit us!” Before the two of you can even fully process what to do, the ship crashes into something, knocking you out instantly…
+
+Your eyes flicker open as you regain consciousness. Your ears are ringing and there’s a sharp pain in your head. You take note of your surroundings. Everything around you lies in complete disarray. Sparks occasionally fly out from electronics and parts of the walls and ceiling are caved in. The whole ship creaks and groans ominously. You look for Cyttos, but their seat is empty. You attempt to get up from your seat, which makes you notice how much your whole body aches. Using the armrest as support, you manage to lift yourself onto your feet. The faint glow of flickering red emergency lights act as your only source of light. You make your way over to the door of the cockpit and open it. You enter a narrow hallway. Above you, a dim light dangles loosely from its wire. There is a door to your left labeled “STORAGE” and a door to your right labeled “MEDICAL”. 
+Which do you enter?:|
 ^
