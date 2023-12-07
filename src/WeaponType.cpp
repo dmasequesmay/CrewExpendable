@@ -1,13 +1,14 @@
 #include "../header/WeaponType.h"
 #include <iostream>
 
-HeavyWeapon::HeavyWeapon(WeaponType type, string name, double attackDamage, double criticalChance)
-    :Weapon(WeaponType type, string name, double attackDamage, double criticalChance)
+HeavyWeapon::HeavyWeapon(string name)
+    :Weapon(HEAVYWEAPON, name, 20.0, 15)
 {}
 
-MediumWeapon::MediumWeapon(WeaponType type, string name, double attackDamage, double criticalChance)Weapon(WeaponType type, string name, double attackDamage, double criticalChance)
+MediumWeapon::MediumWeapon(string name)
+    :Weapon(MEDIUMWEAPON, name, 15.0, 30)
 {}
 
-LightWeapon::LightWeapon(WeaponType type, string name, double attackDamage, double criticalChance)
-    :Weapon(WeaponType type, string name, double attackDamage, double criticalChance)
+LightWeapon::LightWeapon(string name)
+    :Weapon(LIGHTWEAPON, name, 10.0, 45)
 {}
