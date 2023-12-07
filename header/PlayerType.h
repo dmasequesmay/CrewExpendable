@@ -11,18 +11,18 @@ using namespace std;
 class TankPlayer : public Player {
 
     public: 
-        TankPlayer(const string &name, double health, double attackDamage, vector<string> inventory);
+        TankPlayer(const string &name, double health, double attackDamage, vector<string> inventory, double heal);
 };
 
 class NimblePlayer : public Player {
 
     public: 
-        NimblePlayer(const string &name, double health, double attackDamage, vector<string> inventory);
+        NimblePlayer(const string &name, double health, double attackDamage, vector<string> inventory, double heal);
 };
 
 class AllRounderPlayer : public Player {
 
     public: 
-        AllRounderPlayer(const string &name, double health, double attackDamage, vector<string> inventory);
+        AllRounderPlayer(const string &name, double health, double attackDamage, vector<string> inventory, double heal);
 };
 #endif
