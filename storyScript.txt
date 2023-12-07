@@ -31,14 +31,15 @@ An indeterminate amount of time later…
 A violent jolt rips you from your sleep. Flashing red lights attack your tired eyes as loud, blaring alarms ring out through the ship. Something is very wrong and you wonder what the hell happened during your sleep. You look over to your right to see Cyttos frantically searching for the ship manual. You yell, “What the hell happened?”, to which Cyttos yells back, “I don’t know! I think something hit us!” Before the two of you can even fully process what to do, the ship crashes into something, knocking you out instantly…
 
 Your eyes flicker open as you regain consciousness. Your ears are ringing and there’s a sharp pain in your head. You take note of your surroundings. Everything around you lies in complete disarray. Sparks occasionally fly out from electronics and parts of the walls and ceiling are caved in. The whole ship creaks and groans ominously. You look for Cyttos, but their seat is empty. You attempt to get up from your seat, which makes you notice how much your whole body aches. Using the armrest as support, you manage to lift yourself onto your feet. The faint glow of flickering red emergency lights act as your only source of light. You make your way over to the door of the cockpit and open it. You enter a narrow hallway. Above you, a dim light dangles loosely from its wire. There is a door to your left labeled “MEDICAL” and a door to your right labeled “STORAGE”. 
-Which do you enter?:|
+Which do you enter?|
 ^
 
 You enter the door on your left:|
 Considering the circumstances, you feel the need to gather supplies. You push open the door and enter a small cramped room. Most of the cabinets are tilted open with medical supplies strewn across the floor. Seems like most of it isn’t salvageable. You search through drawers until you find one with a bunch of broken syringes. You pick through them and find one intact healing syringe, which you pocket. Scanning the counter to your right, you also notice a large pair of scissors. You grab it just in case.^
 
 You enter the door on your right:|
-Considering the circumstances, you feel the need to gather supplies. You push open the heavy door to reveal a room lined with tall metal shelves and cabinets. All but one of the metal cabinets have been knocked over and into the shelves in the back left corner. You look to the shelves on your immediate left and notice a large monkey wrench. You turn to your right and open the sole upright cabinet to find a crowbar propped up inside. Which do you grab?^
+Considering the circumstances, you feel the need to gather supplies. You push open the heavy door to reveal a room lined with tall metal shelves and cabinets. All but one of the metal cabinets have been knocked over and into the shelves in the back left corner. You look to the shelves on your immediate left and notice a large monkey wrench. You turn to your right and open the sole upright cabinet to find a crowbar propped up inside. 
+Which do you grab?^
 
 You grab the crowbar.|
 It feels well-balanced and has a good weight to it. You feel a little safer now that you’re armed.^
@@ -46,7 +47,8 @@ It feels well-balanced and has a good weight to it. You feel a little safer now 
 You grab the large monkey wrench.|
 It’s heavy as hell and means business. It takes considerable effort to swing it around, but on the flip side, it’ll do considerable damage to anything it collides with.^
 
-You enter the hallway once again. This time, you notice something you hadn’t before. A blood trail leading further down the hall. You immediately think of Cyttos and fear for the worst. Anxiously, you follow the trail further down into the ship until you find yourself at a junction point. To your left is the airlock exit. In front of you, the trail of blood leads deeper down the ship. You could escape the ship right now, or you could keep following the trail and looking for Cyttos. Which do you choose?|
+You leave the room and enter the hallway once again. This time, you notice something you hadn’t before. A blood trail leading further down the hall. You immediately think of Cyttos and fear for the worst. Anxiously, you follow the trail further down into the ship until you find yourself at a junction point. To your left is the airlock exit. In front of you, the trail of blood leads deeper down the ship. You could escape the ship right now, or you could keep following the trail and looking for Cyttos. 
+Which do you choose?|
 ^
 
 Escape the ship|&
@@ -55,5 +57,5 @@ You decide that your main priority should be getting the hell out of there befor
 Keep looking for Cyttos|&
 You decide to keep looking for Cyttos. You continue forward, carefully treading further down the hallway. You follow the trail of blood until you reach the main hub room. There is a large circular table in the middle of the room that the trail leads to and then curves around. It seems like something happened that caused blood splatter in different outward directions originating from the front of the table. You slowly walk around the side of the table until you can see the back of it, revealing the body of Cyttos lying face down in a pool of blood. You begin to rush over to the body when suddenly, it begins to twitch and convulse, causing you to stop dead in your tracks. With a series of unpredictable spasms and disjointed movements, the body is forcibly made to rise up. It turns towards you, giving you a clear view of what used to be Cyttos. What can only be described as a writhing mass of veins has attached itself to Cyttos’ face and is now controlling their lifeless body. You ready yourself as the mimic lurches towards you with an unsettling lack of coordination.^
  
-You wipe your brow and catch your breath. You survived your first encounter with death. The gravity of the situation is clear now. You two were sent to your deaths but you survived (for now). Now you’re determined to make it out of this place alive to make the company pay. To be continued…|
+You wipe your brow and catch your breath. You survived your first encounter with death. The gravity of the situation is clear now. You two were sent to your deaths but you survived (for now). Now you’re determined to make it out of this place alive to make the company pay. To be continued?|
 ^

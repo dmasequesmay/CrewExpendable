@@ -27,10 +27,18 @@ storyTree::storyTree() : fileName("storyScript.txt"), height(0) {
     v.at(5)->setRightChild(v.at(7));
     v.at(4)->setLeftChild(v.at(8));
     v.at(6)->setLeftChild(v.at(8));
-    v.at(7)->setLeftChild(v.at(8)); // med and storage choice
-    v.at(8)->setLeftChild(v.at(9));
+    v.at(7)->setLeftChild(v.at(8)); 
+    v.at(8)->setLeftChild(v.at(9)); // grab syringe + light weapon
     v.at(8)->setRightChild(v.at(10));
-    
+    v.at(10)->setLeftChild(v.at(11)); // grab medium weapon
+    v.at(10)->setRightChild(v.at(12)); // grab heavy weapon
+    v.at(9)->setLeftChild(v.at(13));
+    v.at(11)->setLeftChild(v.at(13));
+    v.at(12)->setLeftChild(v.at(13));
+    v.at(13)->setLeftChild(v.at(14)); // fight slippery alien
+    v.at(13)->setRightChild(v.at(15)); // fight tank alien
+    v.at(14)->setLeftChild(v.at(16));
+    v.at(15)->setLeftChild(v.at(16));
 };
 storyTree::~storyTree() {
     for (int i = 0; i < this->v.size(); ++i) {

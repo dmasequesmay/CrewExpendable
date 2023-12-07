@@ -32,6 +32,7 @@ void gameMenu::action(storyTree& tree) {
     cout <<  endl << "===================================" << endl;
     if (tree.isLeaf(tree.curr)) {
         cout << "NO MORE STORY" << endl;
+        cout << "Thanks for playing!" << endl;
         return;
     }
     else {
