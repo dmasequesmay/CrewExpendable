@@ -22,7 +22,7 @@ Include a navigation diagram for your screens and the layout of each of those sc
 
 ### Navigation Diagram
 The user should start at the Title Screen and enter their character details upon selecting the start game option. From there, the story will begin. The user should progress to a screen which displays a description of what is happening in their story playthrough and be given a list of menu options to either: view stats, view inventory, act, or quit. The user will repeatedly use this menu to progress through the story until they lose or win.
-![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/0ec523d8767b7ca09cc063ce7f28f466b293e2f6/User_Navigation_Diagram-1.jpg)
+![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/master/User_Navigation_Diagram-1.jpg)
 
 ### Screen Layouts
 Main menu: The main menu of the game will include the name of the game and a start/quit option. Pressing quit will exit the program, while the next screen will lead you to the input name screen. The prompts for the user include inputting a number: 1) Start and 2) Quit.
