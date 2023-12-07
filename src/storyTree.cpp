@@ -27,8 +27,10 @@ storyTree::storyTree() : fileName("storyScript.txt"), height(0) {
     v.at(5)->setRightChild(v.at(7));
     v.at(4)->setLeftChild(v.at(8));
     v.at(6)->setLeftChild(v.at(8));
-    v.at(7)->setLeftChild(v.at(8));
-    // complete story
+    v.at(7)->setLeftChild(v.at(8)); // med and storage choice
+    v.at(8)->setLeftChild(v.at(9));
+    v.at(8)->setRightChild(v.at(10));
+    
 };
 storyTree::~storyTree() {
     for (int i = 0; i < this->v.size(); ++i) {
