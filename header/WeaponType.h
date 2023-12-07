@@ -10,6 +10,11 @@ class HeavyWeapon : public Weapon {
         HeavyWeapon(string name);
 };
 
+class MediumWeapon : public Weapon {
+    public: 
+        MediumWeapon(string name);
+};
+
 class LightWeapon : public Weapon {
     public: 
         LightWeapon(string name);
