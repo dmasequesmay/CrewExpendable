@@ -30,6 +30,13 @@ void mainMenu::choice() {
         cout << "View Inventory: shows you what you currently have in your inventory" << endl;
         cout << "View Health shows your current health" << endl;
         cout << "===================================" << endl;
+
+        cout << "There are three classes you can choose from: Tank, Nimble, and All-Around." << endl;
+        cout << "The Tank class has more health, but does less damage and has a lower chance to dodge." << endl;
+        cout << "The Nimble class has less health but has a higher chance to be able to dodge." << endl;
+        cout << "The All-Around class has all average stats to be a more rounded character." << endl;
+        
+        cout << "===================================" << endl;
         cout << "Type any key to continue ";
         string unused;
         cin >> unused; 
