@@ -1,5 +1,18 @@
+#include "../header/Alien.h"
+#include "../header/AlienType.h"
+#include "../header/Character.h"
+#include "../header/characterMenu.h"
+#include "../header/Combat.h"
 #include "../header/gameplay.h"
+#include "../header/mainMenu.h"
+#include "../header/menu.h"
+#include "../header/node.h"
+#include "../header/Player.h"
+#include "../header/PlayerType.h"
 #include "../header/storyTree.h"
+#include "../header/Weapon.h"
+#include "../header/WeaponType.h"
+
 
 void gameMenu::print() {
     cout <<  endl << "===================================" << endl;
@@ -10,15 +23,15 @@ void gameMenu::print() {
     cout << "What will you do? ";
 }
 
-void gameMenu::inputSelect(storyTree& t) {
+void gameMenu::inputSelect(storyTree& t, Player &player) {
     if (userInput == 1) {
-        action(t);
+        action(t, player);
     }
     else if (userInput == 2) {
-        inv();
+        inv(player);
     }
     else if (userInput == 3) {
-        stats();
+        stats(player);
     }
     else if (userInput == 4) {
         help();
@@ -28,7 +41,7 @@ void gameMenu::inputSelect(storyTree& t) {
     }
 }
 
-void gameMenu::action(storyTree& tree) {
+void gameMenu::action(storyTree& tree, Player &player) {
     cout <<  endl << "===================================" << endl;
     if (tree.isLeaf(tree.curr)) {
         cout << "NO MORE STORY" << endl;
@@ -73,17 +86,20 @@ void gameMenu::action(storyTree& tree) {
     }
 }
 
-void gameMenu::inv() {
+void gameMenu::inv(Player &player) {
     cout <<  endl << "===================================" << endl;
     cout << "INVENTORY" << endl;
-    cout << "*IMPLEMENT INVENTORY SCREEN*" << endl;
+    player.getInventory();
     cout << "===================================" << endl;
 }
 
-void gameMenu::stats() {
+void gameMenu::stats(Player &player) {
     cout <<  endl << "===================================" << endl;
     cout << "STATS" << endl;
-    cout << "*IMPLEMENT STATS SCREEN*" << endl;
+    cout << "Player name: " << player.getName() << endl;
+    cout << "Player health: " << player.getHealth() << endl;
+    cout << "Player Attack Damage: " << player.getAttackDamage() << endl;
+    cout << "Player Heal: " << player.getHeal() << endl;
     cout << "===================================" << endl;
 }
 
@@ -115,3 +131,4 @@ void gameMenu::quit(storyTree& tree) {
             quit(tree);
         }
 }
+
