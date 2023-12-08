@@ -24,7 +24,7 @@ class Player : public Character {
         //Returns the names of each object listed in the inventory array
         void getInventory();
         void addInventory(string &inventoryName);
-        void removeInventory(string &inventoryName);
+        void removeInventory();
         bool hasHeavyWeapon();
         bool hasMediumWeapon();
         bool hasLightWeapon();

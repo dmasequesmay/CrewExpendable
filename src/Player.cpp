@@ -30,12 +30,20 @@ void Player::getInventory() {
 void Player::addInventory(string &inventoryName) {
     inventory.push_back(inventoryName);
 }
-
-void Player::removeInventory(string &inventoryName) {
-    for(int i = 0; i < inventory.size(); ++i) {
-        if (inventory.at(i) == inventoryName) {
-            inventory.pop_back();
-        }
+void Player::removeInventory() {
+    // for(int i = 0; i < inventory.size(); ++i) {
+    //     if (inventory.at(i) == inventoryName) {
+    //         inventory.pop_back();
+    //     }
+    // }
+    if (inventory.at(0) == "1x Healing Syringe") {
+        inventory.at(0) = inventory.at(1);
+        inventory.pop_back();
+        cout << "Used a health syringe, you heal 25.0 health" << endl;
+        getHeal();
+    }
+    else {
+        cout << "You cannot use this item right now" << endl;
     }
 }
 

@@ -59,21 +59,20 @@ void gameMenu::action(storyTree& tree, Player &player) {
         // CHECK IF INVENTORY NEEDS TO BE UPDATED
         if (tree.curr == tree.v.at(9)) {
             string healItem = "1x Healing Syringe";
-            string lightWeapon = "Light Weapon";
+            string lightWeapon = "Large Pair of Scissors";
             player.addInventory(healItem);
             player.addInventory(lightWeapon);
         }
         else if (tree.curr == tree.v.at(11)) {
-            string mediumWeapon = "Medium Weapon";
+            string mediumWeapon = "Crowbar";
             player.addInventory(mediumWeapon);
         }
         else if (tree.curr == tree.v.at(12)) {
-            string heavyWeapon = "Heavy Weapon";
+            string heavyWeapon = "Comically-sized Monkey Wrench";
             player.addInventory(heavyWeapon);
         }
-        // endingType true = fight slipperyAlien
-        // endingType false = fight tankAlien
-        if (tree.curr == tree.v.at(14)) {
+        // If player decides to keep looking for Cyttos
+        if (tree.curr == tree.v.at(15)) {
             endingType = true;
         }
         if (tree.curr->getLeftChild() != nullptr && tree.curr->getRightChild() == nullptr) {
@@ -127,7 +126,7 @@ void gameMenu::stats(Player &player) {
 void gameMenu::help() {
     cout <<  endl << "===================================" << endl;
     cout << "HELP" << endl;
-    cout << "Space Game is a simple text-based RPG that is controlled by inputting numbers to decide what you want to do." << endl;
+    cout << "Crew Expendable is a simple text-based RPG that is controlled by inputting numbers to decide what you want to do." << endl;
     cout << "View Inventory: shows you what you currently have in your inventory" << endl;
     cout << "View Stats shows your current stats" << endl;
     cout << "===================================" << endl;

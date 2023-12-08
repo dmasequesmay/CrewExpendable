@@ -82,10 +82,8 @@ int main() {
     storyTree Tree = storyTree();
     cout << "Prologue: " << endl;
     cout << Tree.curr->getChoice() << endl; // PROLOGUE 
-    wait();
     cout << "===================================" << endl;
-
-    //Combat
+    wait();
 
     //while(1) only used for testing purposes
     while (!Tree.isLeaf(Tree.curr)) {
@@ -93,17 +91,27 @@ int main() {
         game.input(5);
         game.inputSelect(Tree, newPlayer);
     }
-    SlipperyAlien newAlien("TestAlien", 120.0, 15.0);
+    string alienName = "";
+    if (game.getEnding() == true) {
+        alienName = "Cyttos' body";
+    }
+    else {
+        alienName = "the parasite";
+    }
+    SlipperyAlien newAlien(alienName, 120.0, 15.0);
     Combat newCombat;
     Fight(newPlayer, newAlien, newCombat);
     cout << "===================================" << endl;
-    cout << "ENDING: " << endl;
-    cout << "You wipe your brow and catch your breath. You survived your first encounter with death. The gravity of the situation is clear now. You two were sent to your deaths but you survived (for now). Now you’re determined to make it out of this place alive to make the company pay. To be continued?" << endl;
+    cout << "You wipe your brow and catch your breath. You survived your first encounter with death. The gravity of the situation is clear now. You two were sent to your deaths but you survived (for now). Now you’re determined to make it out of this place alive to make the company pay." << endl;
+    cout << "To be continued? . . ." << endl;
+    cout << "===================================" << endl;
+    cout << "Thanks for playing!" << endl;
+    cout << "===================================" << endl;
 
     return 0;
 }
 
-void Fight(Player &newPlayer, Character &newAlien,Combat &battle) {
+void Fight(Player &newPlayer, Character &newAlien, Combat &battle) {
     int userChoice;
     int itemChoice;
     bool combatEnd = false;
@@ -150,8 +158,7 @@ void Fight(Player &newPlayer, Character &newAlien,Combat &battle) {
             cout << "Which item would you like to use?" << endl;
             cin >> itemChoice;
             if (itemChoice == 1) {
-                cout << "Used a health potion, you heal 25.0 health" << endl;
-                newPlayer.getHeal();
+                newPlayer.removeInventory();
             }
             else {
                 cout << "This item cannot be used." << endl;

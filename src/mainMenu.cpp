@@ -2,7 +2,7 @@
 
 void mainMenu::print() {
     cout <<  endl << "===================================" << endl;
-    cout << "SPACE GAME" << endl;
+    cout << "CREW EXPENDABLE" << endl;
     cout << "1. Start" << endl;
     cout << "2. Help" << endl; 
     cout << "3. Quit" << endl;
@@ -26,7 +26,7 @@ void mainMenu::choice() {
     if (userInput == 2) {
         cout <<  endl << "===================================" << endl;
         cout << "HELP" << endl;
-        cout << "Space Game is a simple text-based RPG that is controlled by inputting numbers to decide what you want to do." << endl;
+        cout << "Crew Expendable is a simple text-based RPG that is controlled by inputting numbers to decide what you want to do." << endl;
         cout << "View Inventory: shows you what you currently have in your inventory" << endl;
         cout << "View Health shows your current health" << endl;
         cout << "===================================" << endl;
