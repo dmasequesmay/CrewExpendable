@@ -30,6 +30,12 @@ ADD_EXECUTABLE(CharacterTesting
     test/CharacterTesting.cpp
 )
 
+ADD_EXECUTABLE(wepTest
+src/Weapon.cpp 
+src/WeaponType.cpp 
+test/WeaponTests.cpp
+)
+
 ADD_EXECUTABLE(charTest
     src/Alien.cpp
     src/AlienType.cpp

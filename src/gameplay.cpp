@@ -121,7 +121,6 @@ void gameMenu::stats(Player &player) {
     cout << "Player name: " << player.getName() << endl;
     cout << "Player health: " << player.getHealth() << endl;
     cout << "Player Attack Damage: " << player.getAttackDamage() << endl;
-    cout << "Player Heal: " << player.getHeal() << endl;
     cout << "===================================" << endl;
 }
 

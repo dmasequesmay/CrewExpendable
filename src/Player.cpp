@@ -17,15 +17,15 @@ Player::~Player() {
     }
 }
 
-int Player::getHeal() {
+int Player::getHealVal() {
     return static_cast<int>(heal);
+}
+void Player::getHeal() {
+    this->health += 25.0;
 }
 
 void Player::getInventory() {
     for(int i = 0; i < inventory.size(); ++i) {
-        if (hasHeal()) {
-            cout << i + 1 << ". " << inventory.at(i) << ": " << getHeal() << endl;
-        }
         cout << i + 1 << ". " << inventory.at(i) << endl;
     }
 }

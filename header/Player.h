@@ -29,8 +29,9 @@ class Player : public Character {
         bool hasMediumWeapon();
         bool hasLightWeapon();
         bool hasHeal();
-        int getHeal();
+        int getHealVal();
         PlayerType getType();
+        void getHeal();
 };
 
 #endif
