@@ -28,7 +28,7 @@ Main menu: The main menu of the game will include the name of the game and a sta
  
 Input Name: This screen will prompt the user to input a name for the character. The user then will input a name and will be asked to confirm their input before going to the next screen. The user will input 1) for Yes, and 2) for No. If 1), the screen will continue to the select class screen, while selecting 2) will prompt the user to input a name for the character once again.
  
-Select Class: This screen will prompt the user to select a class. The user will have options for what class they can choose from, and inputting a number will select that weapon. After the user has selected a class, they will be asked to confirm their selection, 1) for Yes, and 2) for No. If 1), the screen will continue to the next screen, while 2) will prompt the user to select a weapon.
+Select Class: This screen will prompt the user to select a class. The user will have options for what class they can choose from, and inputting a number will select that class. After the user has selected a class, they will be asked to confirm their selection, 1) for Yes, and 2) for No.
  
 Story Screen. This screen will output the story to the terminal. The user will be prompted to press enter at the bottom of the text which will continue to the next screen.
  
