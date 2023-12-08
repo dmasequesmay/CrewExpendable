@@ -82,7 +82,8 @@ SOLID principles we applied:
  > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
- > Screenshots of the input/output after running your application
+ Title Screen & Character Creation
+ ![image]()
  ## Installation (WITH VSCODE)
  In order to install our program, you must perform the following steps:
   * Clone the repository in VS Code
