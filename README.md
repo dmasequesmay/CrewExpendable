@@ -81,6 +81,10 @@ SOLID principles we applied:
  ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/master/Screenshots/Prologue.png)
  Stats:
  ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/master/Screenshots/Stats.png)
+ Help:
+ ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/master/Screenshots/Help.png)
+ Action:
+ ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/master/Screenshots/Action_ex1.png)
  
  ## Installation (WITH VSCODE)
  In order to install our program, you must perform the following steps:
