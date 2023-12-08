@@ -3,18 +3,26 @@
 #include <iostream>
 #include "menu.h"
 #include "storyTree.h"
+#include "Player.h"
+#include "PlayerType.h"
+
+
 
 using namespace std;
 
 class gameMenu : public Menu {
-public:
-void print();
-void inputSelect(storyTree& t);
-void help();
-void action(storyTree& t);
-void stats();
-void inv();
-void quit(storyTree& t);
+    protected:
+        bool endingType;
+    public:
+        gameMenu();
+        void print();
+        void inputSelect(storyTree& t, Player &player);
+        void help();
+        void action(storyTree& t, Player &player);
+        void stats(Player &p);
+        void inv(Player &p);
+        void quit(storyTree& t, Player &player);
+        bool getEnding() const;
 };
 
 #endif

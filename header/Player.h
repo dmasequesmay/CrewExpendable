@@ -18,16 +18,20 @@ class Player : public Character {
         double heal;
 
     public: 
+        Player(vector<string> inventory);
         Player(const string &name, double health, double attackDamage, PlayerType pType, vector<string> inventory, double heal);
+        ~Player();
         //Returns the names of each object listed in the inventory array
         void getInventory();
         void addInventory(string &inventoryName);
-        void removeInventory(string &inventoryName);
+        void removeInventory();
         bool hasHeavyWeapon();
         bool hasMediumWeapon();
         bool hasLightWeapon();
         bool hasHeal();
-        int getHeal();
+        int getHealVal();
+        PlayerType getType();
+        void getHeal();
 };
 
 #endif

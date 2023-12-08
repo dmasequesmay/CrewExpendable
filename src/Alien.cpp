@@ -5,3 +5,6 @@ Alien::Alien(const string &name, double health, double attackDamage, AlienType a
     :Character(ALIEN, name, health, attackDamage), alienClass(alienClass)
 {}
 
+AlienType Alien::getType() {
+    return alienClass;
+}

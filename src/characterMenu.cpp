@@ -6,7 +6,8 @@ void characterMenu::print() {
     cout << "What is your name? ";
 
     //cin used for testing purposes, as character class has not been made
-    cin >> name;    
+    //cin.ignore();
+    getline(cin,name);    
 }
 
 void characterMenu::printClass() {
