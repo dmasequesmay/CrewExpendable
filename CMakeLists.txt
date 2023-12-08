@@ -29,3 +29,9 @@ ADD_EXECUTABLE(charTest
     src/PlayerType.cpp
     test/CharacterTesting.cpp
 )
+
+ADD_EXECUTABLE(wepTest
+src/Weapon.cpp 
+src/WeaponType.cpp 
+test/WeaponTests.cpp
+)
