@@ -117,7 +117,7 @@ void Fight(Player &newPlayer, Character &newAlien, Combat &battle) {
     bool combatEnd = false;
     while (!combatEnd) {
         cout << endl << "===================================" << endl;
-        cout << "It is your turn" << endl;
+        cout << "It is your turn!" << endl;
         cout << "You have " << newPlayer.getHealth() << " health." << endl << endl;
         cout << "Choose your action:" << endl;
         cout << "1.Attack \n2.Block\n3.Dodge \n4.Items" << endl;
