@@ -94,8 +94,12 @@ SOLID principles we applied:
     * 'make'
     * './game'
  ## Testing
- - To test the Character constructors and their member variables being properly updated and returned, CharacterTests was used to build Player/Alien class objects based on user input. It  asks for user input for specified variables which are then passed into constructors. Then, the values are outputted to show if they were properly updated within the constructors.
- - Similarly, we tested the Weapon/WeaponType classes by taking in user input for the attackDamage and criticalChance values and created Weapon objects from them by using the user input  as parameters. To test hardcoded values, we created constructors with hardcoded values to test if we could create objects without user input.
+ - Google Testing and Mocking Framework was used to test proper input    parameters and proper functionality for class constructors and their various functions involving changes to their variables.
+ - Valgrind was used to test storyTree and the player inventory for memory leaks due to the usage of data structures involving pointers and memory allocation.
+ - To test the Character constructors more in-depth, CharacterTests.cpp was used to simulate user input by creating Player/Alien objects and passing the values received from input as parameters. It asks for user input for specified variables which are then passed into constructors. Then, the values are outputted to show if they were properly updated within the constructors.
+ - Similarly, we tested the Weapon/WeaponType classes by taking in user input for the attackDamage and criticalChance values and created Weapon objects from them by using the user input  as parameters. To test hardcoded values, we created constructors with hardcoded values to test if we could create objects without user input. 
+
+
 
 
 
