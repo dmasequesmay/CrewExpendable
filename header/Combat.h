@@ -12,8 +12,8 @@ class Combat {
 
  public:
  	void attack(Character &, Character &);
-   void block(Character &, Character &);
-   void dodge(Character &, Character &); 
+  void block(Character &, Character &);
+  void dodge(Character &, Character &); 
  };
 
 #endif
