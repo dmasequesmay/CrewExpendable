@@ -86,22 +86,18 @@ int main() {
     cout << "===================================" << endl;
 
     //Combat
-
-    cout << "===================================" << endl;
-    cout << "ENDING: " << endl;
-    cout << "You wipe your brow and catch your breath. You survived your first encounter with death. The gravity of the situation is clear now. You two were sent to your deaths but you survived (for now). Now you’re determined to make it out of this place alive to make the company pay. To be continued?" << endl;
-    
-    SlipperyAlien newAlien("TestAlien", 120.0, 15.0);
-    Combat newCombat;
-    Fight(newPlayer, newAlien, newCombat);
-
-
     //while(1) only used for testing purposes
-    // while (1) {
+    // while (!Tree.isLeaf(Tree.curr)) {
     // game.print();
     // game.input(5);
     // game.inputSelect(Tree, newPlayer);
     // }
+    SlipperyAlien newAlien("TestAlien", 120.0, 15.0);
+    Combat newCombat;
+    Fight(newPlayer, newAlien, newCombat);
+    cout << "===================================" << endl;
+    cout << "ENDING: " << endl;
+    cout << "You wipe your brow and catch your breath. You survived your first encounter with death. The gravity of the situation is clear now. You two were sent to your deaths but you survived (for now). Now you’re determined to make it out of this place alive to make the company pay. To be continued?" << endl;
 
     return 0;
 }
