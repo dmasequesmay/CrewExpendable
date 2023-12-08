@@ -18,7 +18,7 @@ Player::~Player() {
 }
 
 int Player::getHeal() {
-    return static_cast<int>(health);
+    return static_cast<int>(heal);
 }
 
 void Player::getInventory() {
@@ -76,4 +76,8 @@ bool Player::hasHeal() {
         }
     }
     return false;
+}
+
+PlayerType Player::getType() {
+    return pType;
 }

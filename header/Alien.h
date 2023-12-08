@@ -13,6 +13,7 @@ class Alien : public Character {
         AlienType alienClass;
     public:
         Alien(const string &name, double health, double attackDamage, AlienType alienClass);
+        AlienType getType();
 };
 
 #endif

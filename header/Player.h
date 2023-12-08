@@ -30,6 +30,7 @@ class Player : public Character {
         bool hasLightWeapon();
         bool hasHeal();
         int getHeal();
+        PlayerType getType();
 };
 
 #endif
