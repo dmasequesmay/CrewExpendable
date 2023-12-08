@@ -10,9 +10,9 @@ This project is important to our group because creating a text-based role-playin
 * C++
 
 ### What will be the input/output of your project?
-The input of our project will include commands from the user, which control the character's actions- where the user would like to navigate in the galaxy map, which alien species the user would like to attack, etc.
+The input of our project will include commands from the user, which control the character's actions- where the player travels throughout the story, what combat options they use when fighting aliens, etc.
 
-The output of our project includes menus and storylines. The game will display a menu, where the user can view their current statistics- health, resources/inventory, oxygen levels, attack damage, etc. After each user input, the game will display a dialogue that continues to the storyline and prompts the user for their next input.
+The output of our project includes menus and storylines. The game will display a menu, where the user can view their current statistics- current health, inventory, attack damage, etc. After each user input, the game will display dialogue that continues the storyline and prompts the user for their next input.
 
 ### What are the features that the project provides?
 This project will consist of a text-based role-playing game (RPG) that implements a survival horror space theme. The game will have a navigation map, where a character can venture to different environments. Different story choices will lead to alien encounters, where the character will have to engage in turn-based combat. The user will be able to access a menu of their character's statistics before making any decisions. This menu will include the character's current health, inventory, attack damage, etc. 
