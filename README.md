@@ -70,7 +70,8 @@ SOLID principles we applied:
 * Open Closed: Menu base class was created for extensions of the menu. Different parts of the menu became extensions of the menu class rather than adding onto the menu class. This follows the open-closed principle as the menu class was written and closed for modification, but open for extension. This also follows the open closed principal as the derived menus become their own objects and are closed for modification.
 * Dependency: The Combat class was created to handle all instances of combat within the game. Rather than having to call attack() from the Player and Alien classes individually for combat, the Combat class can take in both Character classes as parameters. This makes it so when combat starts within the game, we are able to repeat combat without having to hard code it each time.
 
-![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/assets/133715991/8c58eff4-d935-48bb-8031-509455819957)
+![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/assets/133715991/50c37359-ec04-41f7-a5a6-04d7dc2eb732)
+
 
 
  
