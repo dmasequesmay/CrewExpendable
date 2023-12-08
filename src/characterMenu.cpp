@@ -7,7 +7,7 @@ void characterMenu::print() {
 
     //cin used for testing purposes, as character class has not been made
     //cin.ignore();
-    getline(cin,name);    
+    cin >> name;
 }
 
 void characterMenu::printClass() {
