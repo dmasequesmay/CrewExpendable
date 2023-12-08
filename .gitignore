@@ -5,4 +5,6 @@ cmake_install.cmake
 game
 lib/
 charTest
+CharacterTesting
+menuTest
 wepTest

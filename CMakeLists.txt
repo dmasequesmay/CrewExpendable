@@ -21,7 +21,7 @@ ADD_EXECUTABLE(game
     src/node.cpp
 )
 
-ADD_EXECUTABLE(charTest
+ADD_EXECUTABLE(CharacterTesting
     src/Alien.cpp
     src/AlienType.cpp
     src/Character.cpp
@@ -35,3 +35,37 @@ src/Weapon.cpp
 src/WeaponType.cpp 
 test/WeaponTests.cpp
 )
+
+ADD_EXECUTABLE(charTest
+    src/Alien.cpp
+    src/AlienType.cpp
+    src/Character.cpp
+    src/Player.cpp
+    src/PlayerType.cpp
+    src/Weapon.cpp
+    src/WeaponType.cpp
+    test/charTest.cpp
+)
+
+ADD_EXECUTABLE(menuTest
+    src/Alien.cpp
+    src/AlienType.cpp
+    src/Character.cpp
+    src/Player.cpp
+    src/PlayerType.cpp
+    src/Weapon.cpp
+    src/WeaponType.cpp
+    src/characterMenu.cpp
+    src/gameplay.cpp 
+    src/mainMenu.cpp
+    src/menu.cpp 
+    src/node.cpp
+    src/storyTree.cpp
+    test/menuTest.cpp
+)
+
+TARGET_LINK_LIBRARIES(charTest gtest)
+TARGET_COMPILE_DEFINITIONS(charTest PRIVATE gtest_disable_pthreads=ON)
+
+TARGET_LINK_LIBRARIES(menuTest gtest)
+TARGET_COMPILE_DEFINITIONS(menuTest PRIVATE gtest_disable_pthreads=ON)
