@@ -29,3 +29,12 @@ ADD_EXECUTABLE(charTest
     src/PlayerType.cpp
     test/CharacterTesting.cpp
 )
+
+ADD_EXECUTABLE(storyTest
+    src/node.cpp
+    src/storyTree.cpp
+    test/storyTesting.cpp
+)
+
+TARGET_LINK_LIBRARIES(storyTest gtest)
+TARGET_COMPILE_DEFINITIONS(charTest PRIVATE gtest_disable_pthreads=ON)
