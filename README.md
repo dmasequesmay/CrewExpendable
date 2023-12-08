@@ -56,7 +56,7 @@ Help: The help menu will be available throughout the game. It will include usefu
 
 
 ## Class Diagram
-The Space Exploration: UML Class Diagram models the RPG's object orientation. It illustrates the main classes, interfaces, and associations between classes.
+The Crew Expendable: UML Class Diagram models the RPG's object orientation. It illustrates the main classes, interfaces, and associations between classes.
 
 The Character base class is used to construct characters in the game. The Player class and Alien class are derived from the Character class to inherit all protected variables and public mutator/accessor functions. The Player class and Alien class are both abstract base classes because they include virtual void function(s). There are three subclasses, tankPlayer, nimblePlayer, and allRounderPlayer, which inherit from the Player class. There are three subclasses, tankAlien, slipperyAlien, and bossAlien, which inherit from the Alien class. The Player and Alien subclasses all must override the virtual function(s) defined from their parent superclass. Additionally, the Player Class has an aggregation relationship with the Weapon class because all players have weapons. The Weapon base class has two derived classes, heavyWeapon and lightWeapon, in which their protected variables will have different starting values.
 
