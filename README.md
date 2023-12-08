@@ -71,9 +71,6 @@ SOLID principles we applied:
 * Dependency: The Combat class was created to handle all instances of combat within the game. Rather than having to call attack() from the Player and Alien classes individually for combat, the Combat class can take in both Character classes as parameters. This makes it so when combat starts within the game, we are able to repeat combat without having to hard code it each time.
 
 ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/assets/133715991/50c37359-ec04-41f7-a5a6-04d7dc2eb732)
-
-
-
  
 ## Final deliverable
  
@@ -82,6 +79,9 @@ SOLID principles we applied:
  ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/master/Screenshots/Title_CharacterCreation.png)
  Prologue:
  ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/master/Screenshots/Prologue.png)
+ Stats:
+ ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/master/Screenshots/Stats.png)
+ 
  ## Installation (WITH VSCODE)
  In order to install our program, you must perform the following steps:
   * Clone the repository in VS Code
