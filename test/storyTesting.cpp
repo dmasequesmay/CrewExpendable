@@ -14,8 +14,7 @@ TEST(node, defaultConstructor) {
     EXPECT_EQ(n.getLeftChild(), nullptr);
     EXPECT_EQ(n.getRightChild(), nullptr);
 }
-
-TEST(node, paramConstructor1) {
+TEST(node, paramConstructor) {
     string choice = "Choice A";
     string decision = "Decision A";
     Node n = Node(choice, decision, true);
@@ -24,4 +23,7 @@ TEST(node, paramConstructor1) {
     EXPECT_TRUE(n.isEncounter());
     EXPECT_EQ(n.getLeftChild(), nullptr);
     EXPECT_EQ(n.getRightChild(), nullptr);
+}
+TEST(storyTree, defaultConstructor) {
+    
 }

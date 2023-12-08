@@ -13,7 +13,6 @@ using std::vector;
 class storyTree {
     private: 
         const string fileName;
-        int height;
     public:
         storyTree(); // Constructs our storyline by manually setting each node's children
         ~storyTree();

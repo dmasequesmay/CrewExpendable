@@ -5,7 +5,7 @@
 using std::cout;
 using std::endl;
 
-storyTree::storyTree() : fileName("storyScript.txt"), height(0) {
+storyTree::storyTree() : fileName("storyScript.txt") {
     // if only one child (rightchild null), directly go to that node (do not prompt user to make a choice)
     this->prev = nullptr;
     this->curr = nullptr;
