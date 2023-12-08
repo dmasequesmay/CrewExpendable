@@ -83,7 +83,7 @@ SOLID principles we applied:
  
  ## Screenshots
  Title Screen & Character Creation
- ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/master/Screenshots/Title_CharacterCreation.png)
+ ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/master/Screenshots/Title_CharacterCreation.png | width=100)
  ## Installation (WITH VSCODE)
  In order to install our program, you must perform the following steps:
   * Clone the repository in VS Code
@@ -93,7 +93,7 @@ SOLID principles we applied:
     * 'cmake .'
     * 'make'
     * './game'
-  * Game is played entirely in terminal after execution
+  * The game is played entirely in the terminal after execution
  ## Testing
  - Google Testing and Mocking Framework was used to test proper input    parameters and proper functionality for class constructors and their various functions involving changes to their variables.
  - Valgrind was used to test storyTree and the player inventory for memory leaks due to the usage of data structures involving pointers and memory allocation.
