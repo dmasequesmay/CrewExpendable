@@ -77,9 +77,9 @@ SOLID principles we applied:
 ## Final deliverable
  
  ## Screenshots
- Title Screen & Character Creation
+ Title Screen & Character Creation:
  ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/master/Screenshots/Title_CharacterCreation.png)
- Prologue
+ Prologue:
  ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/master/Screenshots/Prologue.png)
  ## Installation (WITH VSCODE)
  In order to install our program, you must perform the following steps:
