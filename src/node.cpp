@@ -3,14 +3,16 @@
 Node::Node() {
     this->choice = "";
     this->description = "";
+    this->encounter = false;
     this->leftChild = nullptr;
     this->rightChild = nullptr;
-    this->encounter = false;
 };
 Node::Node(const string& c, const string& d, bool e) {
     this->choice = c;
     this->description = d;
     this->encounter = e;
+    this->leftChild = nullptr;
+    this->rightChild = nullptr;
 };
 string Node::getChoice() const {
     return this->choice;
