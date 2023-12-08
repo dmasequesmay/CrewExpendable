@@ -93,6 +93,7 @@ SOLID principles we applied:
     * 'cmake .'
     * 'make'
     * './game'
+  * Game is played entirely in terminal after execution
  ## Testing
  - Google Testing and Mocking Framework was used to test proper input    parameters and proper functionality for class constructors and their various functions involving changes to their variables.
  - Valgrind was used to test storyTree and the player inventory for memory leaks due to the usage of data structures involving pointers and memory allocation.
