@@ -141,7 +141,7 @@ void Fight(Player &newPlayer, Character &newAlien, Combat &battle) {
             else {
                 wait();
                 cout << "===================================" << endl;
-                cout << endl << "It is " << newAlien.getName() << "'s turn" << endl;
+                cout << endl << "It is " << newAlien.getName() << "'s turn!" << endl;
                 battle.attack(newAlien,newPlayer);
             }
         }
