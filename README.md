@@ -1,4 +1,4 @@
-# Space Exploration
+# Crew Expendable
  
 Authors: [Dominique Masequesmay](https://github.com/dmasequesmay) , [William Do](https://github.com/WmDo) , [Ramon Garcia](https://github.com/hyneut) , [Dylan Vuong](https://github.com/dvuong917)
 
@@ -83,7 +83,7 @@ SOLID principles we applied:
  
  ## Screenshots
  Title Screen & Character Creation
- ![image]()
+ ![image](https://github.com/cs100/final-project-dmase002-dvuon016-rgarc224-wdo008/blob/master/Screenshots/Title_CharacterCreation.png)
  ## Installation (WITH VSCODE)
  In order to install our program, you must perform the following steps:
   * Clone the repository in VS Code
