@@ -15,7 +15,7 @@ The input of our project will include commands from the user, which control the 
 The output of our project includes menus and storylines. The game will display a menu, where the user can view their current statistics- health, resources/inventory, oxygen levels, attack damage, etc. After each user input, the game will display a dialogue that continues to the storyline and prompts the user for their next input.
 
 ### What are the features that the project provides?
-This project will consist of a text-based role-playing game (RPG) that implements a Space Exploration theme. The game will have a navigation map, where a character can venture to different planets and environments. Exploring different planets will lead to alien encounters, where the character can either be allies with the new species to gain resources and replenish inventory or conquer the new species through attacks. The user will be able to access a menu of their character's statistics before making any decisions. This menu will include the character's current health, resources/inventory, oxygen levels, attack damage, etc. 
+This project will consist of a text-based role-playing game (RPG) that implements a survival horror space theme. The game will have a navigation map, where a character can venture to different environments. Different story choices will lead to alien encounters, where the character will have to engage in turn-based combat. The user will be able to access a menu of their character's statistics before making any decisions. This menu will include the character's current health, inventory, attack damage, etc. 
 
 ## User Interface Specification
 
