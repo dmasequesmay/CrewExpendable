@@ -88,11 +88,11 @@ int main() {
     //Combat
 
     //while(1) only used for testing purposes
-    // while (!Tree.isLeaf(Tree.curr)) {
-    // game.print();
-    // game.input(5);
-    // game.inputSelect(Tree, newPlayer);
-    // }
+    while (!Tree.isLeaf(Tree.curr)) {
+        game.print();
+        game.input(5);
+        game.inputSelect(Tree, newPlayer);
+    }
     SlipperyAlien newAlien("TestAlien", 120.0, 15.0);
     Combat newCombat;
     Fight(newPlayer, newAlien, newCombat);
@@ -117,6 +117,14 @@ void Fight(Player &newPlayer, Character &newAlien,Combat &battle) {
         cout << "What will you do? ";
         cin >> userChoice; 
         cout << endl;
+
+        if (!cin.good() || userChoice < 1 || userChoice > 4) {
+            cout << "Invalid Input!" << endl;
+            cin.clear();
+            cin.ignore();
+            Fight(newPlayer, newAlien, battle);
+        }
+
         if (userChoice == 1) {
             battle.attack(newPlayer,newAlien);
             if (!newAlien.isAlive()) {
