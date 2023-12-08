@@ -28,7 +28,7 @@ Main menu: The main menu of the game will include the name of the game and a sta
  
 Input Name: This screen will prompt the user to input a name for the character. The user then will input a name and will be asked to confirm their input before going to the next screen. The user will input 1) for Yes, and 2) for No. If 1), the screen will continue to the select class screen, while selecting 2) will prompt the user to input a name for the character once again.
  
-Select Weapon: This screen will prompt the user to select a weapon. The user will have options for what weapons they can choose from, and inputting a number will select that weapon. After the user has selected a weapon, they will be asked to confirm their selection, 1) for Yes, and 2) for No. If 1), the screen will continue to the next screen, while 2) will prompt the user to select a weapon.
+Select Class: This screen will prompt the user to select a class. The user will have options for what class they can choose from, and inputting a number will select that weapon. After the user has selected a class, they will be asked to confirm their selection, 1) for Yes, and 2) for No. If 1), the screen will continue to the next screen, while 2) will prompt the user to select a weapon.
  
 Story Screen. This screen will output the story to the terminal. The user will be prompted to press enter at the bottom of the text which will continue to the next screen.
  
@@ -36,7 +36,7 @@ Gameplay Menu: The main menu consists of functions you can do which includes vie
  
 Action: The general layout of the screen will provide actions of what the character can do depending on the situation they are in.
 
-Action/Battle:  While in battle, the character will be prompted to input a number 1-5 on what they should do. 1) will attack the enemy you are in battle with, 2) will block damage from what the enemy is doing, 3) will give the player a chance to evade the incoming enemy attack or have a chance of still getting hit 4) will give the user the ability to use items that heal or give more oxygen or can change weapons 5) will return to the gameplay menu.
+Action/Battle:  While in battle, the character will be prompted to input a number 1-5 on what they should do. 1) will attack the enemy you are in battle with, 2) will block damage from what the enemy is doing, 3) will give the player a chance to evade the incoming enemy attack or have a chance of still getting hit 4) will give the user the ability to use items that heal or give more oxygen or can change weapons
 
 Battle/Attack: If the user were to choose the attack option, they will be shown how much damage they have done to the alien, and see what the alien’s action is.
 
