@@ -64,8 +64,23 @@ ADD_EXECUTABLE(menuTest
     test/menuTest.cpp
 )
 
+ADD_EXECUTABLE(combatTest
+    src/Alien.cpp
+    src/AlienType.cpp
+    src/Character.cpp
+    src/Player.cpp
+    src/PlayerType.cpp
+    src/Weapon.cpp
+    src/WeaponType.cpp
+    src/Combat.cpp
+    test/combatTest.cpp
+)
+
 TARGET_LINK_LIBRARIES(charTest gtest)
 TARGET_COMPILE_DEFINITIONS(charTest PRIVATE gtest_disable_pthreads=ON)
 
 TARGET_LINK_LIBRARIES(menuTest gtest)
 TARGET_COMPILE_DEFINITIONS(menuTest PRIVATE gtest_disable_pthreads=ON)
+
+TARGET_LINK_LIBRARIES(combatTest gtest)
+TARGET_COMPILE_DEFINITIONS(combatTest PRIVATE gtest_disable_pthreads=ON)
