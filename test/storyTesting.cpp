@@ -28,12 +28,13 @@ TEST(storyTree, defaultConstructor) {
     storyTree t = storyTree();
     EXPECT_EQ(t.prev, nullptr);
     EXPECT_EQ(t.curr, t.v.at(0));
-    EXPECT_EQ(t.v.size(), 17);
+    EXPECT_EQ(t.v.size(), 16);
 }
 TEST(storyTree, leaf) {
     storyTree t = storyTree();
     EXPECT_FALSE(t.isLeaf(t.v.at(0)));
-    EXPECT_TRUE(t.isLeaf(t.v.at(16)));
+    EXPECT_TRUE(t.isLeaf(t.v.at(14)));
+    EXPECT_TRUE(t.isLeaf(t.v.at(15)));
 }
 TEST(storyTree, leftOnce) {
     storyTree t = storyTree();
