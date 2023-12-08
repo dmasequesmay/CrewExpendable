@@ -25,5 +25,25 @@ TEST(node, paramConstructor) {
     EXPECT_EQ(n.getRightChild(), nullptr);
 }
 TEST(storyTree, defaultConstructor) {
-    
+    storyTree t = storyTree();
+    EXPECT_EQ(t.prev, nullptr);
+    EXPECT_EQ(t.curr, t.v.at(0));
+    EXPECT_EQ(t.v.size(), 17);
+}
+TEST(storyTree, leaf) {
+    storyTree t = storyTree();
+    EXPECT_FALSE(t.isLeaf(t.v.at(0)));
+    EXPECT_TRUE(t.isLeaf(t.v.at(16)));
+}
+TEST(storyTree, leftOnce) {
+    storyTree t = storyTree();
+    t.moveLeft();
+    EXPECT_EQ(t.prev, t.v.at(0));
+    EXPECT_EQ(t.curr, t.v.at(1));
+}
+TEST(storyTree, rightOnce) {
+    storyTree t = storyTree();
+    t.moveRight();
+    EXPECT_EQ(t.prev, t.v.at(0));
+    EXPECT_EQ(t.curr, t.v.at(2));
 }
