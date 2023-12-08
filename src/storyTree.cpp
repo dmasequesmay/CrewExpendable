@@ -42,7 +42,7 @@ storyTree::~storyTree() {
     for (int i = 0; i < this->v.size(); ++i) {
         // cout << "DELETING NODE " << i << endl;
         delete v.at(i);
-        v.at(i) == nullptr;
+        v.at(i) = nullptr;
     }
 };
 void storyTree::parseSource() { 

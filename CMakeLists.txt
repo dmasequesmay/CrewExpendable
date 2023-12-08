@@ -76,6 +76,12 @@ ADD_EXECUTABLE(combatTest
     test/combatTest.cpp
 )
 
+ADD_EXECUTABLE(storyTest
+    src/node.cpp
+    src/storyTree.cpp
+    test/storyTesting.cpp
+)
+
 TARGET_LINK_LIBRARIES(charTest gtest)
 TARGET_COMPILE_DEFINITIONS(charTest PRIVATE gtest_disable_pthreads=ON)
 
@@ -84,3 +90,6 @@ TARGET_COMPILE_DEFINITIONS(menuTest PRIVATE gtest_disable_pthreads=ON)
 
 TARGET_LINK_LIBRARIES(combatTest gtest)
 TARGET_COMPILE_DEFINITIONS(combatTest PRIVATE gtest_disable_pthreads=ON)
+
+TARGET_LINK_LIBRARIES(storyTest gtest)
+TARGET_COMPILE_DEFINITIONS(charTest PRIVATE gtest_disable_pthreads=ON)
