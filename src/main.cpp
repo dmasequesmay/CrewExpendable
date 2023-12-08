@@ -54,9 +54,9 @@ int main() {
     //Make player objects
         
     if (cMenu.classChosen() == "Tank") {
-        health = 140;
-        attackDamage = 15;
-        heal = 10;
+        health = 140.0;
+        attackDamage = 16.0;
+        heal = 15.0;
         type = TANKPLAYER;
     }
     else if (cMenu.classChosen() == "All-Around") {
@@ -66,8 +66,8 @@ int main() {
         type = ALLROUNDERPLAYER;
     }
     else {
-        health = 90;
-        attackDamage = 25;
+        health = 90.0;
+        attackDamage = 24.5;
         heal = 20;
         type = NIMBLEPLAYER;
     }
@@ -91,7 +91,7 @@ int main() {
     cout << "ENDING: " << endl;
     cout << "You wipe your brow and catch your breath. You survived your first encounter with death. The gravity of the situation is clear now. You two were sent to your deaths but you survived (for now). Now you’re determined to make it out of this place alive to make the company pay. To be continued?" << endl;
     
-    SlipperyAlien newAlien("TestAlien", 120.0, 15.0);
+    SlipperyAlien newAlien("TestAlien", 300.0, 5.0);
     Combat newCombat;
     Fight(newPlayer, newAlien, newCombat);
 
@@ -119,13 +119,14 @@ void Fight(Player &newPlayer, Character &newAlien,Combat &battle) {
         cout << "===================================" << endl;
         cout << "What will you do? ";
         cin >> userChoice; 
+        cout << endl;
         if (userChoice == 1) {
             battle.attack(newPlayer,newAlien);
             if (!newAlien.isAlive()) {
                 combatEnd = true;
             }
             else {
-                cout << "It is " << newAlien.getName() << "'s turn" << endl;
+                cout << endl << "It is " << newAlien.getName() << "'s turn" << endl;
                 battle.attack(newAlien,newPlayer);
             }
         }
@@ -157,11 +158,11 @@ void Fight(Player &newPlayer, Character &newAlien,Combat &battle) {
         }
     }
     if (!newPlayer.isAlive()) {
-        cout << newPlayer.getName() << " was defeated." << endl;
+        cout << newPlayer.getName() << " was defeated." << endl << endl;
         cout << "======= GAME OVER ========";
     }
     else if (!newAlien.isAlive()) {
-        cout << newAlien.getName() << " was defeated." << endl;
+        cout << newAlien.getName() << " was defeated." << endl << endl;
         cout << "======= YOU WIN! ========";
     }
 
