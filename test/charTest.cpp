@@ -67,7 +67,7 @@ TEST(charTest, Player) {
     EXPECT_EQ(player.getName(), "Player");
     EXPECT_EQ(player.getHealth(), 100);
     EXPECT_EQ(player.getAttackDamage(), 20);
-    EXPECT_EQ(player.getHeal(), 20);
+    EXPECT_EQ(player.getHealVal(), 20);
     player.damage(100);
     ASSERT_EQ(player.isAlive(), false);
 }
@@ -79,7 +79,7 @@ TEST(charTest, TankPlayer) {
     EXPECT_EQ(player.getHealth(), 100);
     EXPECT_EQ(player.getAttackDamage(), 20);
     EXPECT_EQ(player.getType(), TANKPLAYER);
-    EXPECT_EQ(player.getHeal(), 20);
+    EXPECT_EQ(player.getHealVal(), 20);
     player.damage(100);
     ASSERT_EQ(player.isAlive(), false);
 }
@@ -91,7 +91,7 @@ TEST(charTest, AllRounderPlayer) {
     EXPECT_EQ(player.getHealth(), 100);
     EXPECT_EQ(player.getAttackDamage(), 20);
     EXPECT_EQ(player.getType(), ALLROUNDERPLAYER);
-    EXPECT_EQ(player.getHeal(), 20);
+    EXPECT_EQ(player.getHealVal(), 20);
     player.damage(100);
     ASSERT_EQ(player.isAlive(), false);
 }
@@ -103,7 +103,7 @@ TEST(charTest, NimblePlayer) {
     EXPECT_EQ(player.getHealth(), 100);
     EXPECT_EQ(player.getAttackDamage(), 20);
     EXPECT_EQ(player.getType(), NIMBLEPLAYER);
-    EXPECT_EQ(player.getHeal(), 20);
+    EXPECT_EQ(player.getHealVal(), 20);
     player.damage(100);
     ASSERT_EQ(player.isAlive(), false);
 }
