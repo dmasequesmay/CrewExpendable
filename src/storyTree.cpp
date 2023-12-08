@@ -37,8 +37,6 @@ storyTree::storyTree() : fileName("storyScript.txt"), height(0) {
     v.at(12)->setLeftChild(v.at(13));
     v.at(13)->setLeftChild(v.at(14)); // fight slippery alien
     v.at(13)->setRightChild(v.at(15)); // fight tank alien
-    v.at(14)->setLeftChild(v.at(16));
-    v.at(15)->setLeftChild(v.at(16));
 };
 storyTree::~storyTree() {
     for (int i = 0; i < this->v.size(); ++i) {

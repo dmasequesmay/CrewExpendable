@@ -1,15 +1,21 @@
 #include <iostream>
-#include "../header/mainMenu.h"
-#include "../header/gameplay.h"
-#include "../header/characterMenu.h"
-#include "../header/node.h"
-#include "../header/storyTree.h"
+#include <vector>
+#include "../header/Alien.h"
+#include "../header/AlienType.h"
 #include "../header/Character.h"
+#include "../header/characterMenu.h"
 #include "../header/Combat.h"
+#include "../header/gameplay.h"
+#include "../header/mainMenu.h"
+#include "../header/menu.h"
+#include "../header/node.h"
 #include "../header/Player.h"
 #include "../header/PlayerType.h"
+#include "../header/storyTree.h"
+#include "../header/Weapon.h"
+#include "../header/WeaponType.h"
 
-void Combat(Character &newPlayer, Character &newAlien);
+void Fight(Player &newPlayer, Character &newAlien, Combat &battle);
 
 using namespace std;
 
@@ -29,6 +35,12 @@ int main() {
     main.input(3);
     main.choice();
     }
+    vector<string> inventory;
+    Player newPlayer(inventory);
+    double health;
+    double attackDamage;
+    double heal;
+    PlayerType type;
 
     while (!cMenu.getNext()) {
     cMenu.print();
@@ -39,10 +51,33 @@ int main() {
     }
 
     cMenu.setClass();
-    //end here
+    //Make player objects
+        
+    if (cMenu.classChosen() == "Tank") {
+        health = 140;
+        attackDamage = 15;
+        heal = 10;
+        type = TANKPLAYER;
+    }
+    else if (cMenu.classChosen() == "All-Around") {
+        health = 105;
+        attackDamage = 20;
+        heal = 15;
+        type = ALLROUNDERPLAYER;
+    }
+    else {
+        health = 90;
+        attackDamage = 25;
+        heal = 20;
+        type = NIMBLEPLAYER;
+    }
+    
     cMenu.correct();
     }
 
+    string name = cMenu.getName();
+
+    newPlayer = Player(name, health, attackDamage, type, inventory, heal);
     cout <<  endl << "===================================" << endl;
     storyTree Tree = storyTree();
     cout << "Prologue: " << endl;
@@ -50,43 +85,58 @@ int main() {
     wait();
     cout << "===================================" << endl;
 
-//while(1) only used for testing purposes
-    while (1) {
-    game.print();
-    game.input(5);
-    game.inputSelect(Tree);
-    }
+    //Combat
 
+    cout << "===================================" << endl;
+    cout << "ENDING: " << endl;
+    cout << "You wipe your brow and catch your breath. You survived your first encounter with death. The gravity of the situation is clear now. You two were sent to your deaths but you survived (for now). Now you’re determined to make it out of this place alive to make the company pay. To be continued?" << endl;
     
+    SlipperyAlien newAlien("TestAlien", 120.0, 15.0);
+    Combat newCombat;
+    Fight(newPlayer, newAlien, newCombat);
+
+
+    //while(1) only used for testing purposes
+    // while (1) {
+    // game.print();
+    // game.input(5);
+    // game.inputSelect(Tree, newPlayer);
+    // }
 
     return 0;
 }
 
-void Combat(Character &newPlayer, Character &newAlien) {
+void Fight(Player &newPlayer, Character &newAlien,Combat &battle) {
     int userChoice;
     int itemChoice;
     bool combatEnd = false;
     while (!combatEnd) {
-        Combat newCombat;
-        cout << "------- It is your turn ------" << endl;
+        cout << endl << "===================================" << endl;
+        cout << "It is your turn" << endl;
+        cout << "You have " << newPlayer.getHealth() << " health." << endl << endl;
         cout << "Choose your action:" << endl;
-        cout << "1.Attack 2.Block 3.Dodge 4.Items" << endl;
-        cin >> charChoice; 
-        if (charChoice == 1) {
-            newCombat.attack(newPlayer,newAlien);
+        cout << "1.Attack \n2.Block\n3.Dodge \n4.Items" << endl;
+        cout << "===================================" << endl;
+        cout << "What will you do? ";
+        cin >> userChoice; 
+        if (userChoice == 1) {
+            battle.attack(newPlayer,newAlien);
             if (!newAlien.isAlive()) {
                 combatEnd = true;
             }
             else {
-                cout << "------- It is the Alien's turn ------" << endl;
-                newCombat.attack(newAlien,newPlayer);
+                cout << "It is " << newAlien.getName() << "'s turn" << endl;
+                battle.attack(newAlien,newPlayer);
             }
         }
-        else if (charChoice == 2) {
-            newCombat.block(newAlien,newPlayer);
+        else if (userChoice == 2) {
+            battle.block(newAlien,newPlayer);
+            if (!newPlayer.isAlive()) {
+                combatEnd = true;
+            }
         }
-        else if (charChoice == 3) {
-            newCombat.dodge(newAlien,newPlayer);
+        else if (userChoice == 3) {
+            battle.dodge(newAlien,newPlayer);
         }
         else {
             newPlayer.getInventory();

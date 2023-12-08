@@ -4,6 +4,3 @@ Makefile
 cmake_install.cmake
 game
 lib/
-charTest
-wepTest
-combatTest

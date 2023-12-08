@@ -29,19 +29,3 @@ ADD_EXECUTABLE(charTest
     src/PlayerType.cpp
     test/CharacterTesting.cpp
 )
-
-ADD_EXECUTABLE(wepTest
-    src/Weapon.cpp 
-    src/WeaponType.cpp 
-    test/WeaponTests.cpp
-)
-
-ADD_EXECUTABLE(combatTest
-    src/Combat.cpp 
-    src/Alien.cpp
-    src/AlienType.cpp
-    src/Character.cpp
-    src/Player.cpp
-    src/PlayerType.cpp
-    test/combattest.cpp 
-)

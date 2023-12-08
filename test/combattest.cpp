@@ -6,7 +6,7 @@
 #include "../header/Combat.h"
 #include <iostream>
 
-// void Combat(Character &newPlayer, Character &newAlien);
+void Combat(Character &newPlayer, Character &newAlien);
 using namespace std;
 
 int main() {
