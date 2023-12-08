@@ -41,7 +41,7 @@ int main() {
     double attackDamage;
     double heal;
     PlayerType type;
-
+    cin.ignore();
     while (!cMenu.getNext()) {
     cMenu.print();
 

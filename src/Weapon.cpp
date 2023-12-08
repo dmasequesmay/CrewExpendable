@@ -16,10 +16,10 @@ string Weapon::getName() const {
     return wName;
 }
 
-double Weapon::getAttackDamage() {
+double Weapon::getAttackDamage() const {
     return attackDamage;
 }
 
-double Weapon::getCriticalChance() {
+double Weapon::getCriticalChance() const {
     return criticalChance;
 }

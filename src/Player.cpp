@@ -17,6 +17,9 @@ Player::~Player() {
     }
 }
 
+int Player::getHealVal() {
+    return static_cast<int>(heal);
+}
 void Player::getHeal() {
     this->health += 25.0;
 }
@@ -81,4 +84,8 @@ bool Player::hasHeal() {
         }
     }
     return false;
+}
+
+PlayerType Player::getType() {
+    return pType;
 }

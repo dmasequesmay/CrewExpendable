@@ -83,8 +83,15 @@ SOLID principles we applied:
  
  ## Screenshots
  > Screenshots of the input/output after running your application
- ## Installation/Usage
- > Instructions on installing and running your application
+ ## Installation (WITH VSCODE)
+ In order to install our program, you must perform the following steps:
+  * Clone the repository in VS Code
+  * Open up a terminal
+  * Navigate to project directory
+  * Run Commands:
+    * 'cmake .'
+    * 'make'
+    * './game'
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
